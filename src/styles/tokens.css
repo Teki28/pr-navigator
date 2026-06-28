@@ -1,0 +1,149 @@
+/* Liquid Glass — design tokens & material classes.
+   Import once at app root (e.g. in src/main.tsx): import "./styles/tokens.css";
+   Load Tailwind base/components/utilities after this. */
+
+:root {
+  /* durations (mirrors tailwind config) */
+  --dur-fast: 180ms;
+  --dur-base: 260ms;
+  --dur-slow: 420ms;
+
+  /* radius */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* background */
+  --bg-base: #eef1f6;
+  --bg-tint-a: #c7d4ff;
+  --bg-tint-b: #ffd6ec;
+  --bg-tint-c: #d4f5e9;
+
+  /* glass material */
+  --glass-fill: rgba(255, 255, 255, 0.45);
+  --glass-fill-strong: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.7);
+  --glass-border-soft: rgba(255, 255, 255, 0.25);
+
+  /* text */
+  --text-primary: #10131a;
+  --text-secondary: rgba(16, 19, 26, 0.62);
+
+  /* accent */
+  --accent: #0a84ff;
+  --accent-hover: #0060df;
+  --danger: #ff453a;
+}
+
+[data-theme="dark"] {
+  --bg-base: #0a0c12;
+  --bg-tint-a: #1b2a6b;
+  --bg-tint-b: #5a1e45;
+  --bg-tint-c: #11402f;
+
+  --glass-fill: rgba(28, 30, 38, 0.5);
+  --glass-fill-strong: rgba(28, 30, 38, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-border-soft: rgba(255, 255, 255, 0.06);
+
+  --text-primary: #f2f4f8;
+  --text-secondary: rgba(242, 244, 248, 0.6);
+
+  --accent: #0a84ff;
+  --accent-hover: #409cff;
+}
+
+/* ---- living background: the thing glass refracts ---- */
+.lg-bg {
+  position: relative;
+  min-height: 100%;
+  background: var(--bg-base);
+  isolation: isolate;
+}
+.lg-bg::before {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  z-index: -1;
+  background:
+    radial-gradient(40% 50% at 20% 25%, var(--bg-tint-a) 0%, transparent 70%),
+    radial-gradient(45% 55% at 80% 20%, var(--bg-tint-b) 0%, transparent 70%),
+    radial-gradient(50% 60% at 50% 90%, var(--bg-tint-c) 0%, transparent 70%);
+  filter: saturate(1.1);
+  animation: lg-drift 26s ease-in-out infinite;
+}
+@keyframes lg-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  33%      { transform: translate3d(2%, -2%, 0) scale(1.05); }
+  66%      { transform: translate3d(-2%, 1%, 0) scale(1.02); }
+}
+
+/* ---- the glass material (the system's signature) ---- */
+.glass,
+.glass-strong,
+.glass-thin {
+  background: var(--glass-fill);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid transparent;
+  border-image: linear-gradient(135deg, var(--glass-border) 0%, var(--glass-border-soft) 60%) 1;
+  border-radius: var(--radius-lg);
+  box-shadow:
+    0 1px 1px rgba(255, 255, 255, 0.4) inset,
+    0 8px 32px rgba(16, 19, 26, 0.12),
+    0 2px 8px rgba(16, 19, 26, 0.08);
+  transition:
+    box-shadow var(--dur-base) cubic-bezier(0.32, 0.72, 0, 1),
+    background var(--dur-base) cubic-bezier(0.32, 0.72, 0, 1),
+    transform var(--dur-base) cubic-bezier(0.32, 0.72, 0, 1);
+}
+.glass-strong {
+  background: var(--glass-fill-strong);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  backdrop-filter: blur(40px) saturate(180%);
+}
+.glass-thin {
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+  border-radius: var(--radius-md);
+  box-shadow:
+    0 1px 1px rgba(255, 255, 255, 0.35) inset,
+    0 4px 16px rgba(16, 19, 26, 0.08);
+}
+
+/* hover-lift for interactive glass (add .glass-interactive) */
+.glass-interactive:hover {
+  box-shadow:
+    0 1px 1px rgba(255, 255, 255, 0.5) inset,
+    0 16px 48px rgba(16, 19, 26, 0.18),
+    0 4px 12px rgba(16, 19, 26, 0.10);
+}
+.glass-interactive:active {
+  transform: scale(0.97);
+}
+
+/* visible keyboard focus everywhere */
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* graceful fallback when backdrop-filter is unsupported */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass, .glass-strong, .glass-thin {
+    background: var(--glass-fill-strong);
+  }
+}
+
+/* accessibility: calm everything for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .lg-bg::before { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
