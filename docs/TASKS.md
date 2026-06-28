@@ -27,7 +27,7 @@
 - [x] **0.4 Directory skeleton (DESIGN §12)**
   Create empty `src/{app,engine,content,persistence,store,features,i18n,ui,types}` and `content/` tree.
   **Test:** project compiles with placeholder index files; import paths resolve.
-- [ ] **0.5 Cloudflare Pages deploy**
+- [x] **0.5 Cloudflare Pages deploy**
   Connect repo / configure build (`dist/`).
   **Test:** pushing to main yields a live URL serving the placeholder page.
 
@@ -37,19 +37,19 @@
 **Milestone:** Branching + decision logic fully working and unit-tested, headless.
 *(DESIGN §2.1, §4 — the highest-value, easiest-to-test core.)*
 
-- [ ] **1.1 Shared types & schemas (`types/`)**
+- [x] **1.1 Shared types & schemas (`types/`)**
   Define `AnswerProfile`, `Question`, `Condition`/`ConditionGroup`, `DecisionRuleset`, `Track`, `TrackCandidate`, `DocumentMeta`.
   **Test:** types compile; schema objects (zod) instantiate for sample fixtures.
-- [ ] **1.2 Condition evaluator (`engine/conditions.ts`)**
+- [x] **1.2 Condition evaluator (`engine/conditions.ts`)**
   Implement `evaluate(node, profile)` for all ops + `all/any/not`; no `eval`.
   **Test:** table-driven unit tests covering every op, nested groups, and undefined vars (must not throw).
-- [ ] **1.3 Questionnaire traversal (`engine/questionnaire.ts`)**
+- [x] **1.3 Questionnaire traversal (`engine/questionnaire.ts`)**
   Implement `nextQuestionId(current, profile)` with `if/default/goto`.
   **Test:** unit tests assert different profiles yield different next-ids; terminal returns `null`.
-- [ ] **1.4 Decision evaluator (`engine/decision.ts`)**
+- [x] **1.4 Decision evaluator (`engine/decision.ts`)**
   Implement `evaluateTracks(ruleset, profile, tracks)` returning 0..n candidates ordered by confidence, each with `matchedConditions`.
   **Test:** unit tests prove multi-track output for a qualifying profile and empty output for a non-matching one; rationale present.
-- [ ] **1.5 Milestone/document resolution**
+- [x] **1.5 Milestone/document resolution**
   Expand a selected track's milestones → concrete document id checklist.
   **Test:** unit test: given a track, returns the exact ordered document id set.
 
