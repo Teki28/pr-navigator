@@ -1,0 +1,8 @@
+{
+  "id": "residence_card",
+  "category": "identity",
+  "agency": "Immigration Services Agency (出入国在留管理庁)",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+}

@@ -1,0 +1,255 @@
+{
+  "app": {
+    "title": "Japan PR Navigator",
+    "tagline": "Find your path to permanent residence in Japan"
+  },
+  "nav": {
+    "home": "Home",
+    "questionnaire": "Questionnaire",
+    "results": "Results",
+    "documents": "Documents"
+  },
+  "landing": {
+    "start": "Start",
+    "resume": "Resume where I left off",
+    "privacy": "All your data stays on this device. No account required."
+  },
+  "questionnaire": {
+    "back": "Back",
+    "next": "Next",
+    "finish": "See My Results",
+    "progress": "Question {{current}} of {{total}}"
+  },
+  "results": {
+    "title": "Your PR Pathways",
+    "subtitle": "Based on your answers, here are the tracks available to you.",
+    "noResults": "No matching tracks found. Please review your answers.",
+    "confidence": {
+      "high": "Strong match",
+      "medium": "Possible match",
+      "low": "Potential match"
+    },
+    "difficulty": {
+      "easy": "Straightforward",
+      "medium": "Moderate",
+      "hard": "Complex"
+    },
+    "estimatedMonths": "~{{months}} months to apply",
+    "viewDocuments": "View required documents",
+    "selectTrack": "Select this track",
+    "whyThisTrack": "Why this track?",
+    "pros": "Advantages",
+    "cons": "Considerations",
+    "difficultyLabel": "Difficulty",
+    "matchedCriteria": "Your profile matched:",
+    "disclaimer": "This tool provides general guidance only and does not constitute legal advice. Immigration rules change regularly. Always consult a qualified immigration lawyer (行政書士) or specialist before submitting your application.",
+    "lowConfidenceNote": "Confidence is lower than ideal for this track. We strongly recommend consulting a qualified immigration professional to confirm your eligibility before proceeding.",
+    "reviewAnswers": "← Review your answers",
+    "vars": {
+      "years": "Years in Japan",
+      "hsp_points": "HSP points",
+      "is_hsp": "HSP recognition",
+      "has_criminal": "Criminal record",
+      "visa_type": "Visa type",
+      "employment": "Employment status",
+      "annual_income": "Annual income",
+      "pays_tax": "Tax compliance",
+      "no_criminal": "No criminal record",
+      "has_criminal_present": "Criminal record present",
+      "is_hsp_yes": "Recognized as HSP",
+      "is_hsp_no": "Not recognized as HSP"
+    }
+  },
+  "tracks": {
+    "hsp_1yr": {
+      "title": "Highly Skilled Professional – 1 Year Track",
+      "summary": "For HSP visa holders with 80+ points who have lived in Japan for at least 1 year. The fastest path to permanent residence.",
+      "pro1": "Fastest route — eligible after just 1 year of residence",
+      "pro2": "Streamlined process for verified HSP visa holders",
+      "con1": "Requires maintaining 80+ HSP points at time of application",
+      "con2": "Point calculation certificate must be prepared by a registered scrivener"
+    },
+    "hsp_3yr": {
+      "title": "Highly Skilled Professional – 3 Year Track",
+      "summary": "For HSP visa holders with 70+ points who have lived in Japan for at least 3 years.",
+      "pro1": "Lower point threshold (70+) — more applicants are eligible",
+      "pro2": "Well-established process with clear immigration guidelines",
+      "con1": "Requires 3 continuous years on an HSP visa",
+      "con2": "Point score must have been maintained throughout the residency period"
+    },
+    "long_10yr": {
+      "title": "Long-Term Resident Track",
+      "summary": "For those who have legally resided in Japan for 10 or more consecutive years, demonstrating stable life in Japan.",
+      "pro1": "Open to most legal residents regardless of visa type",
+      "pro2": "No specialist point score calculation required",
+      "con1": "Long wait — requires 10 consecutive years of legal residence",
+      "con2": "Stable income and consistent tax compliance required throughout"
+    }
+  },
+  "milestones": {
+    "personal_docs": "Personal Documents",
+    "financial_docs": "Financial Documents",
+    "hsp_docs": "HSP Documents",
+    "employment_docs": "Employment Documents",
+    "application_docs": "Application Submission",
+    "application": "Application Submission"
+  },
+  "questions": {
+    "visa_type": {
+      "label": "What is your current visa type?",
+      "options": {
+        "hsp": "Highly Skilled Professional (高度専門職)",
+        "engineer": "Engineer / Specialist in Humanities / International Services",
+        "business_manager": "Business Manager",
+        "skilled_labor": "Skilled Labor",
+        "spouse": "Spouse of Japanese National / PR Holder",
+        "other": "Other"
+      }
+    },
+    "years": {
+      "label": "How many years have you continuously lived in Japan?"
+    },
+    "is_hsp": {
+      "label": "Have you ever been recognized as a Highly Skilled Professional (高度専門職)?",
+      "options": {
+        "true": "Yes",
+        "false": "No"
+      }
+    },
+    "hsp_points": {
+      "label": "What is your estimated HSP point score?"
+    },
+    "employment": {
+      "label": "What is your current employment situation?",
+      "options": {
+        "employed": "Employed full-time",
+        "self_employed": "Self-employed / Business owner",
+        "other": "Other / Unemployed"
+      }
+    },
+    "annual_income": {
+      "label": "What is your approximate annual income (JPY)?"
+    },
+    "pays_tax": {
+      "label": "Have you consistently paid all taxes (income tax and inhabitant tax) in Japan?",
+      "options": {
+        "true": "Yes, consistently",
+        "false": "No, there were gaps"
+      }
+    },
+    "has_criminal": {
+      "label": "Do you have any criminal record in Japan or overseas?",
+      "options": {
+        "true": "Yes",
+        "false": "No"
+      }
+    }
+  },
+  "documents": {
+    "passport": {
+      "title": "Passport",
+      "category": "Identity"
+    },
+    "residence_card": {
+      "title": "Residence Card",
+      "category": "Identity"
+    },
+    "photo": {
+      "title": "Application Photos",
+      "category": "Identity"
+    },
+    "resident_record": {
+      "title": "Resident Record",
+      "category": "Residence"
+    },
+    "tax_certificate": {
+      "title": "Tax Payment Certificate",
+      "category": "Financial"
+    },
+    "income_proof": {
+      "title": "Income Certificate",
+      "category": "Financial"
+    },
+    "employment_certificate": {
+      "title": "Employment Certificate",
+      "category": "Employment"
+    },
+    "hsp_certificate": {
+      "title": "HSP Point Calculation Sheet",
+      "category": "HSP"
+    },
+    "criminal_record_check": {
+      "title": "Criminal Record Check",
+      "category": "Legal"
+    },
+    "application_form": {
+      "title": "Permanent Residence Application Form",
+      "category": "Application"
+    }
+  },
+  "questmap": {
+    "title": "Your Progress Map",
+    "overallProgress": "Overall progress",
+    "changeTrack": "Change track",
+    "noTrack": "No track selected. Please select a PR track first.",
+    "goToResults": "View tracks",
+    "documentsOf": "{{done}} of {{total}} complete",
+    "milestoneComplete": "Milestone complete!"
+  },
+  "status": {
+    "not-started": "Not started",
+    "in-progress": "In progress",
+    "have": "Have it",
+    "uploaded": "Uploaded",
+    "done": "Done"
+  },
+  "docpanel": {
+    "close": "Back to map",
+    "category": "Category",
+    "agency": "Agency",
+    "obtainMethod": "How to obtain",
+    "guidance": "Guidance",
+    "actions": "Actions",
+    "markHave": "I have this document",
+    "markDone": "Mark as done",
+    "upload": "Upload file",
+    "onDevice": "Stored on this device only — never sent anywhere.",
+    "download": "Download",
+    "deleteFile": "Remove file",
+    "notes": "Personal notes",
+    "notesPlaceholder": "Add notes, reminders, or reference numbers…",
+    "fileStored": "File stored on device",
+    "loadingGuidance": "Loading guidance…",
+    "noGuidance": "No guidance available.",
+    "dropzone": "Drop a file here, or click to browse",
+    "uploaded": "File uploaded",
+    "notStarted": "Not started",
+    "confirmDelete": "Remove the stored file for this document?"
+  },
+  "exportImport": {
+    "title": "Data & Settings",
+    "exportSection": "Export your progress",
+    "exportDesc": "Download a snapshot of your progress as a JSON file. File uploads are not included.",
+    "exportBtn": "Download progress",
+    "importSection": "Restore from backup",
+    "importDesc": "Load a previously exported JSON file to restore your progress.",
+    "importBtn": "Import file",
+    "importSuccess": "Progress restored successfully.",
+    "importConfirm": "Replace your current progress with this backup?",
+    "importError": "Could not read that file. Make sure it's a valid progress export.",
+    "importVersionMismatch": "This backup was created with a different version of the app and may not restore correctly.",
+    "resetSection": "Reset all data",
+    "resetDesc": "Permanently delete all progress, documents, and uploads from this device.",
+    "resetBtn": "Reset everything",
+    "resetConfirm": "Delete all your progress and uploaded files? This cannot be undone.",
+    "resetSuccess": "All data has been cleared.",
+    "back": "Back to map",
+    "backLanding": "Back"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong. Please try again.",
+    "learnMore": "Learn more",
+    "close": "Close"
+  }
+}

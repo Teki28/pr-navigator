@@ -1,0 +1,8 @@
+{
+  "id": "application_form",
+  "category": "application",
+  "agency": "Immigration Services Agency (出入国在留管理庁)",
+  "obtainMethod": "online | in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+}

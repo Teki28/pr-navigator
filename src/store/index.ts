@@ -1,2 +1,7 @@
-// Zustand stores (profile, questionnaire, results, documents, ui) — populated in Phase 4
-export {}
+export { useProfileStore } from './useProfileStore'
+export { useQuestionnaireStore } from './useQuestionnaireStore'
+export { useResultsStore } from './useResultsStore'
+export { useDocumentsStore } from './useDocumentsStore'
+export { useUiStore, initUiFromStorage } from './useUiStore'
+export { initAutosave, hydrateFromStorage } from './persistence'
+export type { DocumentStatus, DocumentRecord, AppPersistedState } from './types'

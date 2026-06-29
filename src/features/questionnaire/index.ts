@@ -1,2 +1,2 @@
-// Questionnaire feature: question renderer, branching navigation — populated in Phase 5
-export {}
+export { QuestionPage } from './QuestionPage'
+export { QuestionRenderer } from './QuestionRenderer'

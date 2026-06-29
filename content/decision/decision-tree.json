@@ -1,0 +1,36 @@
+{
+  "rules": [
+    {
+      "trackId": "hsp_1yr",
+      "when": {
+        "all": [
+          { "var": "hsp_points", "op": ">=", "value": 80 },
+          { "var": "years",      "op": ">=", "value": 1  },
+          { "var": "has_criminal","op": "==", "value": false }
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "trackId": "hsp_3yr",
+      "when": {
+        "all": [
+          { "var": "hsp_points", "op": ">=", "value": 70 },
+          { "var": "years",      "op": ">=", "value": 3  },
+          { "var": "has_criminal","op": "==", "value": false }
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "trackId": "long_10yr",
+      "when": {
+        "all": [
+          { "var": "years",       "op": ">=", "value": 10    },
+          { "var": "has_criminal","op": "==", "value": false  }
+        ]
+      },
+      "confidence": "medium"
+    }
+  ]
+}

@@ -1,2 +1,6 @@
-// IndexedDB and localStorage adapters behind StateRepository / BlobRepository — populated in Phase 3
-export {}
+export type { StateRepository, BlobRepository, BlobEntry, PersistedState } from './types'
+export { IdbStateRepository } from './IdbStateRepository'
+export { IdbBlobRepository } from './IdbBlobRepository'
+export { LocalStorageAdapter } from './LocalStorageAdapter'
+export type { Theme } from './LocalStorageAdapter'
+export { MemoryStateRepository, MemoryBlobRepository } from './memory'

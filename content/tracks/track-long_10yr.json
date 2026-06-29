@@ -1,0 +1,31 @@
+{
+  "id": "long_10yr",
+  "titleKey": "track.long_10yr.title",
+  "summaryKey": "track.long_10yr.summary",
+  "pros": ["track.long_10yr.pro1", "track.long_10yr.pro2"],
+  "cons": ["track.long_10yr.con1", "track.long_10yr.con2"],
+  "difficulty": "medium",
+  "estimatedMonths": 6,
+  "milestones": [
+    {
+      "id": "m_personal",
+      "titleKey": "milestone.personal_docs",
+      "documents": ["passport", "residence_card", "photo", "resident_record"]
+    },
+    {
+      "id": "m_financial",
+      "titleKey": "milestone.financial_docs",
+      "documents": ["tax_certificate", "income_proof"]
+    },
+    {
+      "id": "m_employment",
+      "titleKey": "milestone.employment_docs",
+      "documents": ["employment_certificate"]
+    },
+    {
+      "id": "m_application",
+      "titleKey": "milestone.application",
+      "documents": ["criminal_record_check", "application_form"]
+    }
+  ]
+}

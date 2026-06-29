@@ -1,0 +1,8 @@
+{
+  "id": "photo",
+  "category": "identity",
+  "agency": "Any photo studio (証明写真)",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+}

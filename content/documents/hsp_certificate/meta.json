@@ -1,0 +1,8 @@
+{
+  "id": "hsp_certificate",
+  "category": "hsp",
+  "agency": "Immigration Services Agency (出入国在留管理庁)",
+  "obtainMethod": "online",
+  "links": [],
+  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "employment_certificate",
+  "category": "employment",
+  "agency": "Your employer (HR department)",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+}

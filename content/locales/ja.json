@@ -1,0 +1,255 @@
+{
+  "app": {
+    "title": "日本永住ナビゲーター",
+    "tagline": "日本での永住への道を見つけましょう"
+  },
+  "nav": {
+    "home": "ホーム",
+    "questionnaire": "質問票",
+    "results": "結果",
+    "documents": "書類"
+  },
+  "landing": {
+    "start": "開始する",
+    "resume": "前回の続きから",
+    "privacy": "すべてのデータはこのデバイスに保存されます。アカウント不要。"
+  },
+  "questionnaire": {
+    "back": "戻る",
+    "next": "次へ",
+    "finish": "結果を見る",
+    "progress": "質問 {{current}} / {{total}}"
+  },
+  "results": {
+    "title": "あなたの永住申請ルート",
+    "subtitle": "回答に基づき、利用可能なルートを表示しています。",
+    "noResults": "該当するルートが見つかりませんでした。回答を見直してください。",
+    "confidence": {
+      "high": "強く該当",
+      "medium": "該当の可能性あり",
+      "low": "可能性あり"
+    },
+    "difficulty": {
+      "easy": "比較的簡単",
+      "medium": "普通",
+      "hard": "複雑"
+    },
+    "estimatedMonths": "申請まで約{{months}}か月",
+    "viewDocuments": "必要書類を見る",
+    "selectTrack": "このルートを選択",
+    "whyThisTrack": "なぜこのルート？",
+    "pros": "メリット",
+    "cons": "注意点",
+    "difficultyLabel": "難易度",
+    "matchedCriteria": "あなたのプロフィールが該当する条件：",
+    "disclaimer": "このツールは一般的なガイダンスのみを提供するものであり、法的アドバイスを構成するものではありません。入国管理規則は定期的に変更されます。申請書を提出する前に、必ず有資格の入管専門家（行政書士など）にご相談ください。",
+    "lowConfidenceNote": "このルートの一致度は理想より低めです。先に進む前に、資格要件を確認するため、入管の専門家への相談を強くお勧めします。",
+    "reviewAnswers": "← 回答を見直す",
+    "vars": {
+      "years": "日本在留年数",
+      "hsp_points": "高度専門職ポイント",
+      "is_hsp": "高度専門職認定",
+      "has_criminal": "犯罪歴",
+      "visa_type": "在留資格",
+      "employment": "就労状況",
+      "annual_income": "年収",
+      "pays_tax": "納税状況",
+      "no_criminal": "犯罪歴なし",
+      "has_criminal_present": "犯罪歴あり",
+      "is_hsp_yes": "高度専門職として認定",
+      "is_hsp_no": "高度専門職未認定"
+    }
+  },
+  "tracks": {
+    "hsp_1yr": {
+      "title": "高度専門職 – 1年ルート",
+      "summary": "80ポイント以上で日本在留1年以上の高度専門職ビザ保有者向け。最も短期間で永住許可を取得できるルートです。",
+      "pro1": "最速ルート — 在留1年で申請可能",
+      "pro2": "高度専門職ビザ保有者向けの簡素化されたプロセス",
+      "con1": "申請時に80ポイント以上を維持する必要あり",
+      "con2": "ポイント計算証明書は登録行政書士が作成する必要あり"
+    },
+    "hsp_3yr": {
+      "title": "高度専門職 – 3年ルート",
+      "summary": "70ポイント以上で日本在留3年以上の高度専門職ビザ保有者向け。",
+      "pro1": "低いポイント基準（70以上）— より多くの申請者が対象",
+      "pro2": "明確な入管ガイドラインに基づく確立されたプロセス",
+      "con1": "高度専門職ビザでの3年間の継続在留が必要",
+      "con2": "在留期間を通じてポイントスコアを維持する必要あり"
+    },
+    "long_10yr": {
+      "title": "長期在留ルート",
+      "summary": "日本に10年以上継続して合法的に在留し、安定した生活基盤を持つ方向けのルートです。",
+      "pro1": "ビザの種類に関わらず、ほとんどの合法的な在留者が対象",
+      "pro2": "専門的なポイントスコアの計算が不要",
+      "con1": "長い待機期間 — 10年間の継続合法在留が必要",
+      "con2": "在留期間を通じて安定した収入と納税が必要"
+    }
+  },
+  "milestones": {
+    "personal_docs": "身分関係書類",
+    "financial_docs": "財務関係書類",
+    "hsp_docs": "高度専門職関係書類",
+    "employment_docs": "雇用関係書類",
+    "application_docs": "申請書類の提出",
+    "application": "申請書類の提出"
+  },
+  "questions": {
+    "visa_type": {
+      "label": "現在の在留資格を教えてください。",
+      "options": {
+        "hsp": "高度専門職",
+        "engineer": "技術・人文知識・国際業務",
+        "business_manager": "経営・管理",
+        "skilled_labor": "技能",
+        "spouse": "日本人・永住者の配偶者等",
+        "other": "その他"
+      }
+    },
+    "years": {
+      "label": "日本に継続して在留している年数を教えてください。"
+    },
+    "is_hsp": {
+      "label": "高度専門職として認定されたことがありますか？",
+      "options": {
+        "true": "はい",
+        "false": "いいえ"
+      }
+    },
+    "hsp_points": {
+      "label": "高度専門職のポイント合計の目安を教えてください。"
+    },
+    "employment": {
+      "label": "現在の就労状況を教えてください。",
+      "options": {
+        "employed": "会社員（正社員）",
+        "self_employed": "自営業・経営者",
+        "other": "その他・無職"
+      }
+    },
+    "annual_income": {
+      "label": "年収の目安を教えてください（円）。"
+    },
+    "pays_tax": {
+      "label": "日本で所得税・住民税を継続して納めていますか？",
+      "options": {
+        "true": "はい、継続して納めています",
+        "false": "いいえ、未納の期間があります"
+      }
+    },
+    "has_criminal": {
+      "label": "日本または海外で犯罪歴がありますか？",
+      "options": {
+        "true": "はい",
+        "false": "いいえ"
+      }
+    }
+  },
+  "documents": {
+    "passport": {
+      "title": "パスポート",
+      "category": "身分証明"
+    },
+    "residence_card": {
+      "title": "在留カード",
+      "category": "身分証明"
+    },
+    "photo": {
+      "title": "証明写真",
+      "category": "身分証明"
+    },
+    "resident_record": {
+      "title": "住民票",
+      "category": "在留"
+    },
+    "tax_certificate": {
+      "title": "納税証明書",
+      "category": "財務"
+    },
+    "income_proof": {
+      "title": "所得証明書",
+      "category": "財務"
+    },
+    "employment_certificate": {
+      "title": "在職証明書",
+      "category": "雇用"
+    },
+    "hsp_certificate": {
+      "title": "高度専門職ポイント計算書",
+      "category": "高度専門職"
+    },
+    "criminal_record_check": {
+      "title": "犯罪経歴証明書",
+      "category": "法的"
+    },
+    "application_form": {
+      "title": "永住許可申請書",
+      "category": "申請"
+    }
+  },
+  "questmap": {
+    "title": "進捗マップ",
+    "overallProgress": "全体の進捗",
+    "changeTrack": "ルートを変更",
+    "noTrack": "ルートが選択されていません。まずPRルートを選択してください。",
+    "goToResults": "ルートを見る",
+    "documentsOf": "{{total}}件中{{done}}件完了",
+    "milestoneComplete": "マイルストーン達成！"
+  },
+  "status": {
+    "not-started": "未着手",
+    "in-progress": "進行中",
+    "have": "取得済み",
+    "uploaded": "アップロード済み",
+    "done": "完了"
+  },
+  "docpanel": {
+    "close": "マップに戻る",
+    "category": "カテゴリ",
+    "agency": "発行機関",
+    "obtainMethod": "取得方法",
+    "guidance": "ガイダンス",
+    "actions": "アクション",
+    "markHave": "この書類を取得済みにする",
+    "markDone": "完了にする",
+    "upload": "ファイルをアップロード",
+    "onDevice": "このデバイスのみに保存されます。外部には送信されません。",
+    "download": "ダウンロード",
+    "deleteFile": "ファイルを削除",
+    "notes": "個人メモ",
+    "notesPlaceholder": "メモ、リマインダー、参照番号などを追加…",
+    "fileStored": "ファイルはデバイスに保存済み",
+    "loadingGuidance": "ガイダンスを読み込み中…",
+    "noGuidance": "ガイダンスはありません。",
+    "dropzone": "ファイルをここにドロップするか、クリックして選択",
+    "uploaded": "ファイルアップロード済み",
+    "notStarted": "未着手",
+    "confirmDelete": "この書類の保存済みファイルを削除しますか？"
+  },
+  "exportImport": {
+    "title": "データ＆設定",
+    "exportSection": "進捗をエクスポート",
+    "exportDesc": "進捗のスナップショットをJSONファイルとしてダウンロードします。ファイルのアップロードは含まれません。",
+    "exportBtn": "進捗をダウンロード",
+    "importSection": "バックアップから復元",
+    "importDesc": "以前にエクスポートしたJSONファイルを読み込んで進捗を復元します。",
+    "importBtn": "ファイルをインポート",
+    "importSuccess": "進捗が正常に復元されました。",
+    "importConfirm": "現在の進捗をこのバックアップで置き換えますか？",
+    "importError": "そのファイルを読み込めませんでした。有効な進捗エクスポートファイルであることを確認してください。",
+    "importVersionMismatch": "このバックアップは異なるバージョンのアプリで作成されており、正しく復元されない場合があります。",
+    "resetSection": "全データをリセット",
+    "resetDesc": "このデバイスからすべての進捗、書類、アップロードを完全に削除します。",
+    "resetBtn": "すべてリセット",
+    "resetConfirm": "すべての進捗とアップロードされたファイルを削除しますか？この操作は元に戻せません。",
+    "resetSuccess": "すべてのデータが削除されました。",
+    "back": "マップに戻る",
+    "backLanding": "戻る"
+  },
+  "common": {
+    "loading": "読み込み中…",
+    "error": "エラーが発生しました。もう一度お試しください。",
+    "learnMore": "詳しく見る",
+    "close": "閉じる"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "passport",
+  "category": "identity",
+  "agency": "Your home country's embassy or consulate",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+}

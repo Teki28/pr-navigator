@@ -1,0 +1,8 @@
+{
+  "id": "tax_certificate",
+  "category": "tax",
+  "agency": "Municipal office (市区町村役場) or tax office (税務署)",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+}

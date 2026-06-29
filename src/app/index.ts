@@ -1,2 +1,2 @@
-// Bootstrap, router, providers, layout shell — populated in Phase 5
-export {}
+export { AppRouter } from './Router'
+export { HydrationGate, computeResumeRoute } from './HydrationGate'

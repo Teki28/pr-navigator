@@ -1,0 +1,79 @@
+[
+  {
+    "id": "visa_type",
+    "type": "single-choice",
+    "labelKey": "q.visa_type.label",
+    "options": [
+      { "value": "engineer", "labelKey": "q.visa_type.opt.engineer" },
+      { "value": "hsp",      "labelKey": "q.visa_type.opt.hsp" },
+      { "value": "business", "labelKey": "q.visa_type.opt.business" },
+      { "value": "student",  "labelKey": "q.visa_type.opt.student" },
+      { "value": "dependent","labelKey": "q.visa_type.opt.dependent" },
+      { "value": "other",    "labelKey": "q.visa_type.opt.other" }
+    ],
+    "next": [
+      { "default": true, "goto": "years" }
+    ]
+  },
+  {
+    "id": "years",
+    "type": "number",
+    "labelKey": "q.years.label",
+    "next": [
+      { "if": { "var": "years", "op": ">=", "value": 1 }, "goto": "is_hsp" },
+      { "default": true, "goto": "employment" }
+    ]
+  },
+  {
+    "id": "is_hsp",
+    "type": "boolean",
+    "labelKey": "q.is_hsp.label",
+    "next": [
+      { "if": { "var": "is_hsp", "op": "==", "value": true }, "goto": "hsp_points" },
+      { "default": true, "goto": "employment" }
+    ]
+  },
+  {
+    "id": "hsp_points",
+    "type": "number",
+    "labelKey": "q.hsp_points.label",
+    "next": [
+      { "default": true, "goto": "employment" }
+    ]
+  },
+  {
+    "id": "employment",
+    "type": "single-choice",
+    "labelKey": "q.employment.label",
+    "options": [
+      { "value": "employed",      "labelKey": "q.employment.opt.employed" },
+      { "value": "self_employed", "labelKey": "q.employment.opt.self_employed" },
+      { "value": "unemployed",    "labelKey": "q.employment.opt.unemployed" }
+    ],
+    "next": [
+      { "default": true, "goto": "annual_income" }
+    ]
+  },
+  {
+    "id": "annual_income",
+    "type": "number",
+    "labelKey": "q.annual_income.label",
+    "next": [
+      { "default": true, "goto": "pays_tax" }
+    ]
+  },
+  {
+    "id": "pays_tax",
+    "type": "boolean",
+    "labelKey": "q.pays_tax.label",
+    "next": [
+      { "default": true, "goto": "has_criminal" }
+    ]
+  },
+  {
+    "id": "has_criminal",
+    "type": "boolean",
+    "labelKey": "q.has_criminal.label",
+    "next": []
+  }
+]

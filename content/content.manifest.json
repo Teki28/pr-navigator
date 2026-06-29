@@ -1,9 +1,27 @@
 {
-  "version": "0.0.0",
-  "generatedAt": "2026-06-28",
+  "version": "1.0.0",
+  "generatedAt": "2026-06-28T00:00:00.000Z",
   "questions": "questions/questions.json",
   "decision": "decision/decision-tree.json",
-  "tracks": [],
-  "documents": [],
-  "locales": ["en", "ja"]
+  "tracks": [
+    "tracks/track-hsp_1yr.json",
+    "tracks/track-hsp_3yr.json",
+    "tracks/track-long_10yr.json"
+  ],
+  "documents": [
+    "documents/passport/meta.json",
+    "documents/residence_card/meta.json",
+    "documents/photo/meta.json",
+    "documents/resident_record/meta.json",
+    "documents/tax_certificate/meta.json",
+    "documents/income_proof/meta.json",
+    "documents/employment_certificate/meta.json",
+    "documents/hsp_certificate/meta.json",
+    "documents/criminal_record_check/meta.json",
+    "documents/application_form/meta.json"
+  ],
+  "locales": [
+    "locales/en.json",
+    "locales/ja.json"
+  ]
 }

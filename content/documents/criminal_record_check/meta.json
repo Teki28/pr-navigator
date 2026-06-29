@@ -1,0 +1,8 @@
+{
+  "id": "criminal_record_check",
+  "category": "background",
+  "agency": "Your home country's relevant authority (e.g. police, FBI, ACRO)",
+  "obtainMethod": "in-person | mail | online",
+  "links": [],
+  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+}
