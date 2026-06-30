@@ -1,79 +1,116 @@
 [
   {
-    "id": "visa_type",
+    "id": "j_skip_confirmed",
+    "type": "boolean",
+    "labelKey": "q.j_skip_confirmed.label",
+    "next": [
+      { "if": { "var": "j_skip_confirmed", "op": "==", "value": true },  "goto": "j_skip_1yr" },
+      { "default": true, "goto": "j_skip_unconfirmed_eligible" }
+    ]
+  },
+  {
+    "id": "j_skip_1yr",
+    "type": "boolean",
+    "labelKey": "q.j_skip_1yr.label",
+    "next": [
+      { "default": true, "goto": "hsp_points_band" }
+    ]
+  },
+  {
+    "id": "j_skip_unconfirmed_eligible",
+    "type": "boolean",
+    "labelKey": "q.j_skip_unconfirmed_eligible.label",
+    "next": [
+      { "default": true, "goto": "hsp_points_band" }
+    ]
+  },
+  {
+    "id": "hsp_points_band",
     "type": "single-choice",
-    "labelKey": "q.visa_type.label",
+    "labelKey": "q.hsp_points_band.label",
     "options": [
-      { "value": "engineer", "labelKey": "q.visa_type.opt.engineer" },
-      { "value": "hsp",      "labelKey": "q.visa_type.opt.hsp" },
-      { "value": "business", "labelKey": "q.visa_type.opt.business" },
-      { "value": "student",  "labelKey": "q.visa_type.opt.student" },
-      { "value": "dependent","labelKey": "q.visa_type.opt.dependent" },
-      { "value": "other",    "labelKey": "q.visa_type.opt.other" }
+      { "value": "above_80",       "labelKey": "q.hsp_points_band.opt.above_80" },
+      { "value": "seventy_to_79",  "labelKey": "q.hsp_points_band.opt.seventy_to_79" },
+      { "value": "below_70",       "labelKey": "q.hsp_points_band.opt.below_70" }
     ],
     "next": [
-      { "default": true, "goto": "years" }
+      { "if": { "var": "hsp_points_band", "op": "==", "value": "above_80" },      "goto": "hsp_80_kodo_visa" },
+      { "if": { "var": "hsp_points_band", "op": "==", "value": "seventy_to_79" }, "goto": "hsp_70_kodo_visa" },
+      { "default": true, "goto": "current_visa" }
     ]
   },
   {
-    "id": "years",
-    "type": "number",
-    "labelKey": "q.years.label",
-    "next": [
-      { "if": { "var": "years", "op": ">=", "value": 1 }, "goto": "is_hsp" },
-      { "default": true, "goto": "employment" }
-    ]
-  },
-  {
-    "id": "is_hsp",
+    "id": "hsp_80_kodo_visa",
     "type": "boolean",
-    "labelKey": "q.is_hsp.label",
+    "labelKey": "q.hsp_80_kodo_visa.label",
     "next": [
-      { "if": { "var": "is_hsp", "op": "==", "value": true }, "goto": "hsp_points" },
-      { "default": true, "goto": "employment" }
+      { "if": { "var": "hsp_80_kodo_visa", "op": "==", "value": true },  "goto": "also_family_member" },
+      { "default": true, "goto": "hsp_80_was_80_1yr" }
     ]
   },
   {
-    "id": "hsp_points",
-    "type": "number",
-    "labelKey": "q.hsp_points.label",
+    "id": "hsp_80_was_80_1yr",
+    "type": "boolean",
+    "labelKey": "q.hsp_80_was_80_1yr.label",
     "next": [
-      { "default": true, "goto": "employment" }
+      { "default": true, "goto": "current_visa" }
     ]
   },
   {
-    "id": "employment",
+    "id": "hsp_70_kodo_visa",
+    "type": "boolean",
+    "labelKey": "q.hsp_70_kodo_visa.label",
+    "next": [
+      { "if": { "var": "hsp_70_kodo_visa", "op": "==", "value": true },  "goto": "also_family_member" },
+      { "default": true, "goto": "hsp_70_was_70_3yr" }
+    ]
+  },
+  {
+    "id": "hsp_70_was_70_3yr",
+    "type": "boolean",
+    "labelKey": "q.hsp_70_was_70_3yr.label",
+    "next": [
+      { "default": true, "goto": "current_visa" }
+    ]
+  },
+  {
+    "id": "current_visa",
     "type": "single-choice",
-    "labelKey": "q.employment.label",
+    "labelKey": "q.current_visa.label",
     "options": [
-      { "value": "employed",      "labelKey": "q.employment.opt.employed" },
-      { "value": "self_employed", "labelKey": "q.employment.opt.self_employed" },
-      { "value": "unemployed",    "labelKey": "q.employment.opt.unemployed" }
+      { "value": "work",            "labelKey": "q.current_visa.opt.work"            },
+      { "value": "teijusha",        "labelKey": "q.current_visa.opt.teijusha"        },
+      { "value": "family_stay",     "labelKey": "q.current_visa.opt.family_stay"     },
+      { "value": "spouse_japanese", "labelKey": "q.current_visa.opt.spouse_japanese" },
+      { "value": "child_japanese",  "labelKey": "q.current_visa.opt.child_japanese"  },
+      { "value": "spouse_pr",       "labelKey": "q.current_visa.opt.spouse_pr"       },
+      { "value": "child_pr",        "labelKey": "q.current_visa.opt.child_pr"        }
     ],
     "next": [
-      { "default": true, "goto": "annual_income" }
+      {
+        "if": { "var": "current_visa", "op": "in", "value": ["work", "teijusha", "family_stay"] },
+        "goto": "also_family_member"
+      }
     ]
   },
   {
-    "id": "annual_income",
-    "type": "number",
-    "labelKey": "q.annual_income.label",
-    "next": [
-      { "default": true, "goto": "pays_tax" }
-    ]
-  },
-  {
-    "id": "pays_tax",
+    "id": "also_family_member",
     "type": "boolean",
-    "labelKey": "q.pays_tax.label",
+    "labelKey": "q.also_family_member.label",
     "next": [
-      { "default": true, "goto": "has_criminal" }
+      { "if": { "var": "also_family_member", "op": "==", "value": true }, "goto": "family_relation" }
     ]
   },
   {
-    "id": "has_criminal",
-    "type": "boolean",
-    "labelKey": "q.has_criminal.label",
+    "id": "family_relation",
+    "type": "single-choice",
+    "labelKey": "q.family_relation.label",
+    "options": [
+      { "value": "spouse_japanese", "labelKey": "q.family_relation.opt.spouse_japanese" },
+      { "value": "child_japanese",  "labelKey": "q.family_relation.opt.child_japanese"  },
+      { "value": "spouse_pr",       "labelKey": "q.family_relation.opt.spouse_pr"       },
+      { "value": "child_pr",        "labelKey": "q.family_relation.opt.child_pr"        }
+    ],
     "next": []
   }
 ]

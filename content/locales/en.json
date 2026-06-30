@@ -46,18 +46,21 @@
     "lowConfidenceNote": "Confidence is lower than ideal for this track. We strongly recommend consulting a qualified immigration professional to confirm your eligibility before proceeding.",
     "reviewAnswers": "← Review your answers",
     "vars": {
+      "j_skip_confirmed": "J-Skip recognition",
+      "j_skip_1yr": "J-Skip held 1+ year",
+      "j_skip_unconfirmed_eligible": "Meets J-Skip criteria",
+      "hsp_points_band": "HSP point band",
+      "hsp_80_kodo_visa": "Currently on 高度専門職 (80 pts)",
+      "hsp_80_was_80_1yr": "Had 80+ pts 1 year ago",
+      "hsp_70_kodo_visa": "Currently on 高度専門職 (70 pts)",
+      "hsp_70_was_70_3yr": "Had 70+ pts 3 years ago",
+      "current_visa": "Current visa status",
+      "also_family_member": "Family connection to JP/PR",
+      "family_relation": "Family relationship type",
       "years": "Years in Japan",
-      "hsp_points": "HSP points",
-      "is_hsp": "HSP recognition",
-      "has_criminal": "Criminal record",
-      "visa_type": "Visa type",
-      "employment": "Employment status",
-      "annual_income": "Annual income",
-      "pays_tax": "Tax compliance",
+      "hsp_points": "HSP Points",
       "no_criminal": "No criminal record",
-      "has_criminal_present": "Criminal record present",
-      "is_hsp_yes": "Recognized as HSP",
-      "is_hsp_no": "Not recognized as HSP"
+      "has_criminal_present": "Criminal history present"
     }
   },
   "tracks": {
@@ -88,11 +91,119 @@
   },
   "milestones": {
     "personal_docs": "Personal Documents",
-    "financial_docs": "Financial Documents",
-    "hsp_docs": "HSP Documents",
+    "family_docs": "Family Relationship Documents",
     "employment_docs": "Employment Documents",
+    "financial_docs": "Tax & Social Insurance Documents",
+    "hsp_docs": "HSP Point Calculation Documents",
+    "jskip_docs": "J-Skip (特別高度人材) Documents",
     "application_docs": "Application Submission",
     "application": "Application Submission"
+  },
+  "track": {
+    "1_1": {
+      "title": "Track 1-1 — Spouse of Japanese National",
+      "summary": "For foreign nationals married to a Japanese citizen for 3+ years and residing in Japan for at least 1 year. One of the fastest routes if married to a Japanese national.",
+      "pro1": "Relatively short residency requirement — 3-year marriage with 1 year in Japan",
+      "pro2": "Spousal ties to a Japanese national are a strong eligibility factor",
+      "con1": "Requires Japanese spouse's family register (戸籍謄本) and relative list",
+      "con2": "Tax and social insurance proof covers the past 3 years"
+    },
+    "1_2": {
+      "title": "Track 1-2 — Child of Japanese National",
+      "summary": "For biological or specially adopted children of Japanese nationals. The most straightforward family-track route with only 1 year of financial documentation required.",
+      "pro1": "Shortest financial lookback — only 1 year of tax / pension records",
+      "pro2": "No continuous residence requirement beyond being in Japan at time of application",
+      "con1": "Parentage must be proved with the Japanese parent's family register",
+      "con2": "Eligibility depends entirely on the parent's status as a Japanese national"
+    },
+    "1_3": {
+      "title": "Track 1-3 — Spouse of Permanent Resident",
+      "summary": "For foreign nationals married to a Permanent Resident or Special Permanent Resident for 3+ years and residing in Japan for at least 1 year.",
+      "pro1": "Follows the same streamlined document list as Track 1-1",
+      "pro2": "Established process — immigration offices are familiar with this route",
+      "con1": "Requires marriage certificate and a relative list (親族一覧表)",
+      "con2": "Sponsor's PR status must be current and valid at time of application"
+    },
+    "1_4": {
+      "title": "Track 1-4 — Child of Permanent Resident",
+      "summary": "For biological or specially adopted children of Permanent Residents or Special Permanent Residents. Only 1 year of financial documentation needed.",
+      "pro1": "Short financial lookback — only 1 year of tax / pension records",
+      "pro2": "Simple family proof: a birth certificate is typically sufficient",
+      "con1": "PR parent's status must remain valid throughout the review period",
+      "con2": "Children who are themselves already adults may face closer scrutiny"
+    },
+    "2_1": {
+      "title": "Track 2-1 — Long-Term Resident (定住者)",
+      "summary": "For holders of the 定住者 (Long-Term Resident) visa who have resided in Japan under that status for 5 years or more (or 10 years total with 5 years on a qualifying visa).",
+      "pro1": "Open to a broad range of nationalities eligible for 定住者 status",
+      "pro2": "No specialist point calculation required",
+      "con1": "5-year lookback for tax, and 2-year lookback for pension/health insurance",
+      "con2": "Asset documentation (bank book, real estate) must also be provided"
+    },
+    "3_1": {
+      "title": "Track 3-1 — Work Visa (Just Employment Route)",
+      "summary": "For holders of employment-based visas (技術・人文知識・国際業務, 技能, etc.) who have lived in Japan for 10+ years, including at least 5 years on a work or residence-type visa.",
+      "pro1": "No special certifications required beyond standard employment proof",
+      "pro2": "Applies to a wide range of work visa categories",
+      "con1": "Long requirement — 10 years of continuous legal residence in Japan",
+      "con2": "5-year tax lookback; asset and social insurance documentation required"
+    },
+    "3_2": {
+      "title": "Track 3-2 — Family Stay (家族滞在)",
+      "summary": "For 家族滞在 (Dependent Family Stay) visa holders who have resided in Japan for 10+ years. Documentation draws on the supporting household member's income.",
+      "pro1": "Viable even if the applicant has no personal income",
+      "pro2": "Follows the same 10-year residency rule as Track 3-1",
+      "con1": "Family relationship must be proved with an additional family status certificate",
+      "con2": "5-year tax lookback applies to the supporting household member's records"
+    },
+    "4_1": {
+      "title": "Track 4-1 — HSP 80 pts (ア) — Currently on 高度専門職",
+      "summary": "For Highly Skilled Professionals currently residing on a 高度専門職 or 特定活動 visa with 80+ HSP points. The fastest HSP route: eligible after just 1 year.",
+      "pro1": "Fastest HSP path — only 1 year of residence required",
+      "pro2": "Only 1-year lookback for tax and pension documentation",
+      "con1": "Must maintain 80+ points at the time of application",
+      "con2": "Requires both the current and (if available) the original HSP point calculation certificates"
+    },
+    "4_2": {
+      "title": "Track 4-2 — HSP 80 pts (イ) — Currently on Another Visa",
+      "summary": "For applicants who had 80+ HSP points 1 year ago but are currently residing on a visa other than 高度専門職. Requires layered documentation combining base-visa docs and HSP point sheets.",
+      "pro1": "Still benefits from the 1-year shortened residency window",
+      "pro2": "Accommodates applicants whose visa status changed after the HSP assessment",
+      "con1": "Must submit HSP point sheets for both the current date AND 1 year ago",
+      "con2": "Base-visa documents (family, employment, etc.) must also be submitted alongside HSP materials"
+    },
+    "4_3": {
+      "title": "Track 4-3 — HSP 70 pts (ア) — Currently on 高度専門職",
+      "summary": "For Highly Skilled Professionals currently on a 高度専門職 or 特定活動 visa with 70–79 HSP points. Requires 3 years of continuous residence at that point level.",
+      "pro1": "Lower point threshold than Track 4-1 — 70 pts is enough",
+      "pro2": "Well-established pathway with clear guidelines from the ISA",
+      "con1": "Requires 3 years of continuous residence under the HSP status",
+      "con2": "3-year lookback for tax and pension documentation"
+    },
+    "4_4": {
+      "title": "Track 4-4 — HSP 70 pts (イ) — Currently on Another Visa",
+      "summary": "For applicants who had 70+ HSP points 3 years ago but are currently on a non-高度専門職 visa. The most document-intensive HSP route.",
+      "pro1": "Usable even if the applicant has since switched to a different visa",
+      "pro2": "70-point threshold gives access to the HSP track for a broader pool",
+      "con1": "Must submit HSP point sheets for both now AND 3 years ago",
+      "con2": "Base-visa documents stack on top of HSP materials — significant paperwork"
+    },
+    "5_1": {
+      "title": "Track 5-1 — J-Skip (Confirmed Recognition)",
+      "summary": "For holders of the 高度専門職 visa who have received official J-Skip (特別高度人材) recognition and have resided in Japan for at least 1 year since confirmation. The fastest permanent residence route available.",
+      "pro1": "Fastest route of all — only 1 year since J-Skip confirmation is required",
+      "pro2": "Minimal documentation: J-Skip certificate plus 1-year financial records",
+      "con1": "Requires the official 特別高度人材証明書 affixed to the passport",
+      "con2": "Must continue to meet J-Skip eligibility criteria at the time of application"
+    },
+    "5_2": {
+      "title": "Track 5-2 — J-Skip (Unconfirmed Eligibility)",
+      "summary": "For applicants who meet the J-Skip (特別高度人材) criteria now and did so 1 year ago, but have not received official J-Skip confirmation. Combines base-visa documents with a self-assessed J-Skip eligibility package.",
+      "pro1": "Allows access to the J-Skip benefit period without prior formal recognition",
+      "pro2": "Can be combined with most other visa types as the base",
+      "con1": "No official certificate — applicant must self-document J-Skip eligibility thoroughly",
+      "con2": "Higher uncertainty: ISA judgment on eligibility is discretionary without the formal stamp"
+    }
   },
   "questions": {
     "visa_type": {
@@ -245,6 +356,61 @@
     "resetSuccess": "All data has been cleared.",
     "back": "Back to map",
     "backLanding": "Back"
+  },
+  "q": {
+    "j_skip_confirmed": {
+      "label": "Do you currently hold official J-Skip (特別高度人材) recognition issued by the Immigration Services Agency of Japan?"
+    },
+    "j_skip_1yr": {
+      "label": "Have you held J-Skip recognition continuously for 1 year or more, while residing in Japan on a 高度専門職 (Highly Skilled Professional) visa?"
+    },
+    "j_skip_unconfirmed_eligible": {
+      "label": "Although you do not hold official J-Skip confirmation, do you believe you meet the J-Skip (特別高度人材) eligibility criteria both NOW and as of 1 year ago? (You can verify the criteria on the METI website.)"
+    },
+    "hsp_points_band": {
+      "label": "What best describes your approximate Highly Skilled Professional (高度人材外国人) point score? You can estimate your score using the official Ministry of Justice point calculator.",
+      "opt": {
+        "above_80": "80 points or above",
+        "seventy_to_79": "70 to 79 points",
+        "below_70": "Below 70 points, or I have not been assessed"
+      }
+    },
+    "hsp_80_kodo_visa": {
+      "label": "Are you currently residing in Japan on a 高度専門職 (Highly Skilled Professional) or 特定活動 (Specified Activities designated for HSP) visa?"
+    },
+    "hsp_80_was_80_1yr": {
+      "label": "Was your HSP point score 80 or above as of 1 year ago?"
+    },
+    "hsp_70_kodo_visa": {
+      "label": "Are you currently residing in Japan on a 高度専門職 (Highly Skilled Professional) or 特定活動 (Specified Activities designated for HSP) visa?"
+    },
+    "hsp_70_was_70_3yr": {
+      "label": "Was your HSP point score 70 or above as of 3 years ago?"
+    },
+    "current_visa": {
+      "label": "What is your current visa / residence status in Japan? (Select the category that best matches your residence card.)",
+      "opt": {
+        "work": "Work visa — Engineer / Specialist in Humanities / International Services, Skilled Labor, Business Manager, etc.",
+        "teijusha": "定住者 (Long-Term Resident)",
+        "family_stay": "家族滞在 (Dependent Family Stay)",
+        "spouse_japanese": "日本人の配偶者等 — Spouse of a Japanese national",
+        "child_japanese": "日本人の配偶者等 — Child (incl. specially adopted child) of a Japanese national",
+        "spouse_pr": "永住者の配偶者等 — Spouse of a Permanent Resident or Special Permanent Resident",
+        "child_pr": "永住者の配偶者等 — Child of a Permanent Resident or Special Permanent Resident"
+      }
+    },
+    "also_family_member": {
+      "label": "Are you also the spouse or child of a Japanese national, Permanent Resident, or Special Permanent Resident? (Even if your visa does not reflect this relationship.)"
+    },
+    "family_relation": {
+      "label": "What is that family relationship?",
+      "opt": {
+        "spouse_japanese": "Spouse of a Japanese national",
+        "child_japanese": "Child (incl. specially adopted child) of a Japanese national",
+        "spouse_pr": "Spouse of a Permanent Resident or Special Permanent Resident",
+        "child_pr": "Child of a Permanent Resident or Special Permanent Resident"
+      }
+    }
   },
   "common": {
     "loading": "Loading…",

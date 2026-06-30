@@ -1,12 +1,22 @@
 {
-  "version": "1.0.0",
-  "generatedAt": "2026-06-28T00:00:00.000Z",
+  "version": "2.0.0",
+  "generatedAt": "2026-06-30T00:00:00.000Z",
   "questions": "questions/questions.json",
   "decision": "decision/decision-tree.json",
   "tracks": [
-    "tracks/track-hsp_1yr.json",
-    "tracks/track-hsp_3yr.json",
-    "tracks/track-long_10yr.json"
+    "tracks/track-1_1.json",
+    "tracks/track-1_2.json",
+    "tracks/track-1_3.json",
+    "tracks/track-1_4.json",
+    "tracks/track-2_1.json",
+    "tracks/track-3_1.json",
+    "tracks/track-3_2.json",
+    "tracks/track-4_1.json",
+    "tracks/track-4_2.json",
+    "tracks/track-4_3.json",
+    "tracks/track-4_4.json",
+    "tracks/track-5_1.json",
+    "tracks/track-5_2.json"
   ],
   "documents": [
     "documents/passport/meta.json",

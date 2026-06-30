@@ -1,0 +1,31 @@
+{
+  "id": "5_1",
+  "titleKey": "track.5_1.title",
+  "summaryKey": "track.5_1.summary",
+  "pros": ["track.5_1.pro1", "track.5_1.pro2"],
+  "cons": ["track.5_1.con1", "track.5_1.con2"],
+  "difficulty": "medium",
+  "estimatedMonths": 4,
+  "milestones": [
+    {
+      "id": "m_identity",
+      "titleKey": "milestone.personal_docs",
+      "documents": ["passport", "residence_card", "photo", "resident_record"]
+    },
+    {
+      "id": "m_financial",
+      "titleKey": "milestone.financial_docs",
+      "documents": ["employment_certificate", "tax_certificate", "national_tax_cert", "pension_record", "health_insurance_card", "assets_proof"]
+    },
+    {
+      "id": "m_jskip",
+      "titleKey": "milestone.jskip_docs",
+      "documents": ["j_skip_certificate", "annual_income_proof"]
+    },
+    {
+      "id": "m_application",
+      "titleKey": "milestone.application",
+      "documents": ["reason_letter", "application_form", "guarantor_letter", "understanding_letter"]
+    }
+  ]
+}
