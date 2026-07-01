@@ -358,7 +358,7 @@ describe('LandingPage', () => {
     expect(screen.getByRole('button', { name: /resume/i })).toBeInTheDocument()
   })
 
-  it('Start resets stores and calls navigate("/questionnaire")', async () => {
+  it('Start resets stores and calls navigate("/track-select")', async () => {
     const user = userEvent.setup()
     const q: Question = { id: 'q1', type: 'boolean', labelKey: 'q.q1', next: [] }
     useQuestionnaireStore.setState({ questions: [q], currentId: null, path: [], isComplete: false })
@@ -367,9 +367,9 @@ describe('LandingPage', () => {
     renderWithMemoryRouter(<LandingPage />)
     await user.click(screen.getByRole('button', { name: /start/i }))
 
-    expect(mockNavigate).toHaveBeenCalledWith('/questionnaire')
+    expect(mockNavigate).toHaveBeenCalledWith('/track-select')
     expect(useProfileStore.getState().answers).toEqual({})
-    expect(useQuestionnaireStore.getState().currentId).toBe('q1')
+    expect(useQuestionnaireStore.getState().currentId).toBeNull()
   })
 
   it('Resume calls navigate("/questionnaire") without resetting the store', async () => {

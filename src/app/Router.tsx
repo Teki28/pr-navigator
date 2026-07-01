@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { HydrationGate } from './HydrationGate'
 
 const LandingPage = lazy(() => import('../features/landing/LandingPage').then((m) => ({ default: m.LandingPage })))
+const TrackSelectPage = lazy(() => import('../features/track-select/TrackSelectPage').then((m) => ({ default: m.TrackSelectPage })))
 const QuestionPage = lazy(() => import('../features/questionnaire/QuestionPage').then((m) => ({ default: m.QuestionPage })))
 const ResultsPage = lazy(() => import('../features/decision/ResultsPage').then((m) => ({ default: m.ResultsPage })))
 const QuestMapPage = lazy(() => import('../features/quest-map/QuestMapPage').then((m) => ({ default: m.QuestMapPage })))
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
     element: <HydrationGate />,
     children: [
       { path: '/', element: <Suspense fallback={<LoadingFallback />}><LandingPage /></Suspense> },
+      { path: '/track-select', element: <Suspense fallback={<LoadingFallback />}><TrackSelectPage /></Suspense> },
       { path: '/questionnaire', element: <Suspense fallback={<LoadingFallback />}><QuestionPage /></Suspense> },
       { path: '/results', element: <Suspense fallback={<LoadingFallback />}><ResultsPage /></Suspense> },
       { path: '/map', element: <Suspense fallback={<LoadingFallback />}><QuestMapPage /></Suspense> },
