@@ -1,5 +1,6 @@
 {
   "id": "5_2",
+  "checklistId": "5_2",
   "titleKey": "track.5_2.title",
   "summaryKey": "track.5_2.summary",
   "pros": ["track.5_2.pro1", "track.5_2.pro2"],

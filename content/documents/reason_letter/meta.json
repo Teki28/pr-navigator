@@ -1,0 +1,8 @@
+{
+  "id": "reason_letter",
+  "category": "statement",
+  "agency": "Self-prepared (自作)",
+  "obtainMethod": "prepare",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

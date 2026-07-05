@@ -1,0 +1,8 @@
+{
+  "id": "assets_proof",
+  "category": "financial",
+  "agency": "Bank / Legal Affairs Bureau (銀行 / 法務局)",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "social_insurance_payment_cert",
+  "category": "insurance",
+  "agency": "Japan Pension Service (日本年金機構)",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "hsp_supporting_docs",
+  "category": "hsp",
+  "agency": "Various (各種機関)",
+  "obtainMethod": "prepare",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

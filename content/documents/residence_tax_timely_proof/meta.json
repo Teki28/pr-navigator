@@ -1,0 +1,8 @@
+{
+  "id": "residence_tax_timely_proof",
+  "category": "tax",
+  "agency": "Bank (bank passbook copy) / Municipal office (銀行通帳 / 市区町村役場)",
+  "obtainMethod": "prepare",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

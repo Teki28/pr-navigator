@@ -13,11 +13,84 @@
     },
 
     {
-      "trackId": "5_2",
+      "trackId": "5_2_1",
       "when": {
         "all": [
-          { "var": "j_skip_confirmed",          "op": "==", "value": false },
-          { "var": "j_skip_unconfirmed_eligible","op": "==", "value": true  }
+          { "var": "j_skip_confirmed",           "op": "==", "value": false },
+          { "var": "j_skip_unconfirmed_eligible", "op": "==", "value": true  },
+          { "var": "current_visa",                "op": "==", "value": "spouse_japanese" }
+        ]
+      },
+      "confidence": "high"
+    },
+
+    {
+      "trackId": "5_2_2",
+      "when": {
+        "all": [
+          { "var": "j_skip_confirmed",           "op": "==", "value": false },
+          { "var": "j_skip_unconfirmed_eligible", "op": "==", "value": true  },
+          { "var": "current_visa",                "op": "==", "value": "child_japanese" }
+        ]
+      },
+      "confidence": "high"
+    },
+
+    {
+      "trackId": "5_2_3",
+      "when": {
+        "all": [
+          { "var": "j_skip_confirmed",           "op": "==", "value": false },
+          { "var": "j_skip_unconfirmed_eligible", "op": "==", "value": true  },
+          { "var": "current_visa",                "op": "==", "value": "spouse_pr" }
+        ]
+      },
+      "confidence": "high"
+    },
+
+    {
+      "trackId": "5_2_4",
+      "when": {
+        "all": [
+          { "var": "j_skip_confirmed",           "op": "==", "value": false },
+          { "var": "j_skip_unconfirmed_eligible", "op": "==", "value": true  },
+          { "var": "current_visa",                "op": "==", "value": "child_pr" }
+        ]
+      },
+      "confidence": "high"
+    },
+
+    {
+      "trackId": "5_2_5",
+      "when": {
+        "all": [
+          { "var": "j_skip_confirmed",           "op": "==", "value": false },
+          { "var": "j_skip_unconfirmed_eligible", "op": "==", "value": true  },
+          { "var": "current_visa",                "op": "==", "value": "teijusha" }
+        ]
+      },
+      "confidence": "high"
+    },
+
+    {
+      "trackId": "5_2_6",
+      "when": {
+        "all": [
+          { "var": "j_skip_confirmed",           "op": "==", "value": false },
+          { "var": "j_skip_unconfirmed_eligible", "op": "==", "value": true  },
+          { "var": "current_visa",                "op": "==", "value": "work" }
+        ]
+      },
+      "confidence": "high"
+    },
+
+    {
+      "trackId": "5_2_7",
+      "when": {
+        "all": [
+          { "var": "j_skip_confirmed",           "op": "==", "value": false },
+          { "var": "j_skip_unconfirmed_eligible", "op": "==", "value": true  },
+          { "var": "current_visa",                "op": "==", "value": "family_stay" }
         ]
       },
       "confidence": "high"
@@ -35,12 +108,91 @@
     },
 
     {
-      "trackId": "4_2",
+      "trackId": "4_2_1",
       "when": {
         "all": [
-          { "var": "hsp_points_band",    "op": "==", "value": "above_80" },
-          { "var": "hsp_80_kodo_visa",   "op": "==", "value": false },
-          { "var": "hsp_80_was_80_1yr",  "op": "==", "value": true  }
+          { "var": "hsp_points_band",   "op": "==", "value": "above_80" },
+          { "var": "hsp_80_kodo_visa",  "op": "==", "value": false },
+          { "var": "hsp_80_was_80_1yr", "op": "==", "value": true  },
+          { "var": "current_visa",      "op": "==", "value": "spouse_japanese" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_2_2",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",   "op": "==", "value": "above_80" },
+          { "var": "hsp_80_kodo_visa",  "op": "==", "value": false },
+          { "var": "hsp_80_was_80_1yr", "op": "==", "value": true  },
+          { "var": "current_visa",      "op": "==", "value": "child_japanese" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_2_3",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",   "op": "==", "value": "above_80" },
+          { "var": "hsp_80_kodo_visa",  "op": "==", "value": false },
+          { "var": "hsp_80_was_80_1yr", "op": "==", "value": true  },
+          { "var": "current_visa",      "op": "==", "value": "spouse_pr" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_2_4",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",   "op": "==", "value": "above_80" },
+          { "var": "hsp_80_kodo_visa",  "op": "==", "value": false },
+          { "var": "hsp_80_was_80_1yr", "op": "==", "value": true  },
+          { "var": "current_visa",      "op": "==", "value": "child_pr" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_2_5",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",   "op": "==", "value": "above_80" },
+          { "var": "hsp_80_kodo_visa",  "op": "==", "value": false },
+          { "var": "hsp_80_was_80_1yr", "op": "==", "value": true  },
+          { "var": "current_visa",      "op": "==", "value": "teijusha" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_2_6",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",   "op": "==", "value": "above_80" },
+          { "var": "hsp_80_kodo_visa",  "op": "==", "value": false },
+          { "var": "hsp_80_was_80_1yr", "op": "==", "value": true  },
+          { "var": "current_visa",      "op": "==", "value": "work" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_2_7",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",   "op": "==", "value": "above_80" },
+          { "var": "hsp_80_kodo_visa",  "op": "==", "value": false },
+          { "var": "hsp_80_was_80_1yr", "op": "==", "value": true  },
+          { "var": "current_visa",      "op": "==", "value": "family_stay" }
         ]
       },
       "confidence": "medium"
@@ -58,12 +210,91 @@
     },
 
     {
-      "trackId": "4_4",
+      "trackId": "4_4_1",
       "when": {
         "all": [
-          { "var": "hsp_points_band",   "op": "==", "value": "seventy_to_79" },
-          { "var": "hsp_70_kodo_visa",  "op": "==", "value": false },
-          { "var": "hsp_70_was_70_3yr", "op": "==", "value": true  }
+          { "var": "hsp_points_band",    "op": "==", "value": "seventy_to_79" },
+          { "var": "hsp_70_kodo_visa",   "op": "==", "value": false },
+          { "var": "hsp_70_was_70_3yr",  "op": "==", "value": true  },
+          { "var": "current_visa",       "op": "==", "value": "spouse_japanese" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_4_2",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",    "op": "==", "value": "seventy_to_79" },
+          { "var": "hsp_70_kodo_visa",   "op": "==", "value": false },
+          { "var": "hsp_70_was_70_3yr",  "op": "==", "value": true  },
+          { "var": "current_visa",       "op": "==", "value": "child_japanese" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_4_3",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",    "op": "==", "value": "seventy_to_79" },
+          { "var": "hsp_70_kodo_visa",   "op": "==", "value": false },
+          { "var": "hsp_70_was_70_3yr",  "op": "==", "value": true  },
+          { "var": "current_visa",       "op": "==", "value": "spouse_pr" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_4_4",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",    "op": "==", "value": "seventy_to_79" },
+          { "var": "hsp_70_kodo_visa",   "op": "==", "value": false },
+          { "var": "hsp_70_was_70_3yr",  "op": "==", "value": true  },
+          { "var": "current_visa",       "op": "==", "value": "child_pr" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_4_5",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",    "op": "==", "value": "seventy_to_79" },
+          { "var": "hsp_70_kodo_visa",   "op": "==", "value": false },
+          { "var": "hsp_70_was_70_3yr",  "op": "==", "value": true  },
+          { "var": "current_visa",       "op": "==", "value": "teijusha" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_4_6",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",    "op": "==", "value": "seventy_to_79" },
+          { "var": "hsp_70_kodo_visa",   "op": "==", "value": false },
+          { "var": "hsp_70_was_70_3yr",  "op": "==", "value": true  },
+          { "var": "current_visa",       "op": "==", "value": "work" }
+        ]
+      },
+      "confidence": "medium"
+    },
+
+    {
+      "trackId": "4_4_7",
+      "when": {
+        "all": [
+          { "var": "hsp_points_band",    "op": "==", "value": "seventy_to_79" },
+          { "var": "hsp_70_kodo_visa",   "op": "==", "value": false },
+          { "var": "hsp_70_was_70_3yr",  "op": "==", "value": true  },
+          { "var": "current_visa",       "op": "==", "value": "family_stay" }
         ]
       },
       "confidence": "medium"

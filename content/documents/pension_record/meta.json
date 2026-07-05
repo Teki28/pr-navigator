@@ -1,0 +1,8 @@
+{
+  "id": "pension_record",
+  "category": "pension",
+  "agency": "Japan Pension Service office (年金事務所)",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

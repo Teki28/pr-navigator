@@ -1,0 +1,227 @@
+{
+  "checklistId": "5_2_6",
+  "trackId": "5_2_6",
+  "titleEn": "J-Skip (Tokubetsu Kodo Jinzai) — Qualifying but not officially recognized — Work Visa",
+  "titleJa": "特別高度人材（要件に該当するが確認未取得）（就労ビザ）",
+  "sourceFile": "docs/checklist/5-2.md",
+  "notes": [
+    "This checklist has two parts: (A) base documents depending on your current visa type, and (B) J-Skip specific documents.",
+    "For Part A, refer to the checklist corresponding to your current visa and submit the specified items.",
+    "Japanese-issued certificates must be dated within 3 months of application.",
+    "Documents in foreign languages must include a Japanese translation.",
+    "Additional documents may be requested during the review process.",
+    "For details on J-Skip (特別高度人材制度) requirements, see the Immigration Services Agency website."
+  ],
+  "documents": [
+    {
+      "seq": 1,
+      "docId": "application_form",
+      "nameJa": "在留資格・身分関係に応じた書類（一覧表の番号2以降の提出書類を除く）",
+      "nameEn": "Base Documents per Your Current Visa Type (excluding items #2+ in this list)",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": null,
+      "noteEn": "Submit base documents from the checklist matching your current visa type:\n• Spouse of Japanese national: items #1–6 and #18–21 from checklist-1_1\n• Child of Japanese national or child of PR/SPR: items #1–5 and #17–19 from checklist-1_2 or checklist-1_4\n• Spouse of PR/SPR: items #1–5 and #17–20 from checklist-1_3\n• Long-term resident (定住者): items #1–6 and #18–22 from checklist-2_1\n• Employment visa: items #1–5 and #17–21 from checklist-3_1",
+      "noteJa": "現在の在留資格に応じた提出書類一覧表の対応番号の書類を提出。詳細は各一覧表参照。"
+    },
+    {
+      "seq": 2,
+      "docId": "tax_certificate",
+      "nameJa": "直近1年分の住民税の課税（又は非課税）証明書",
+      "nameEn": "Municipal Resident Tax Certificate — most recent 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": 1,
+      "noteEn": "Submit 1 year regardless of your base visa type. If not available, substitute with withholding tax slip or pay stubs.",
+      "noteJa": "現在の在留資格にかかわらず直近1年分を提出。提出できない場合は給与所得の源泉徴収票または給与明細書等で代替可。"
+    },
+    {
+      "seq": 3,
+      "docId": "residence_tax_payment_cert",
+      "nameJa": "直近1年分の住民税の納税証明書",
+      "nameEn": "Municipal Resident Tax Payment Certificate — most recent 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": 1,
+      "noteEn": null,
+      "noteJa": null
+    },
+    {
+      "seq": 4,
+      "docId": "residence_tax_timely_proof",
+      "nameJa": "直近1年間において住民税を適正な時期に納めていることを証明する資料",
+      "nameEn": "Proof of Timely Resident Tax Payments — most recent 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Required only if tax was NOT withheld at source during any part of the past year.",
+      "periodYears": 1,
+      "noteEn": "Bank passbook copy or receipts.",
+      "noteJa": "通帳の写し、領収証書等。"
+    },
+    {
+      "seq": 5,
+      "docId": "national_tax_cert",
+      "nameJa": "国税の納税証明書（その3）",
+      "nameEn": "National Tax Payment Certificate — Form 3",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": null,
+      "noteEn": "All 5 national tax types. Issued by Tax Office.",
+      "noteJa": "5税目全て。税務署から発行。"
+    },
+    {
+      "seq": 6,
+      "docId": "pension_record",
+      "nameJa": "年金事務所発行の「被保険者記録照会回答票」「被保険者記録照会（納付Ⅰ）」「被保険者記録照会（納付Ⅱ）」",
+      "nameEn": "Pension Enrollment & Contribution Record (issued by Pension Office)",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": 1,
+      "noteEn": "Alternatives: nenkin statement (full record, letter format), Nenkin Net monthly record, or national pension receipts. Redact Basic Pension Number.",
+      "noteJa": "代替可：ねんきん定期便（封書形式のみ）、ねんきんネットの各月記録、国民年金保険料領収証書。基礎年金番号は黒塗り。"
+    },
+    {
+      "seq": 7,
+      "docId": "health_insurance_card",
+      "nameJa": "世帯全員分の健康保険被保険者証（写し）",
+      "nameEn": "Employee Health Insurance Card — All Household Members (copy)",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Submit if currently enrolled in Employee Health Insurance. If enrolled for entire past 1 year, items #8–#10 are not needed.",
+      "periodYears": null,
+      "noteEn": "Redact insurer number and insured person symbol/number.",
+      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗りにして提出。"
+    },
+    {
+      "seq": 8,
+      "docId": "national_health_insurance_card",
+      "nameJa": "世帯全員分の国民健康保険被保険者証（写し）",
+      "nameEn": "National Health Insurance Card — All Household Members (copy)",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Submit if currently enrolled in National Health Insurance.",
+      "periodYears": null,
+      "noteEn": "Redact insurer number and insured person symbol/number.",
+      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗り。"
+    },
+    {
+      "seq": 9,
+      "docId": "national_health_insurance_payment_cert",
+      "nameJa": "直近1年間の国民健康保険料（税）納付証明書",
+      "nameEn": "National Health Insurance Premium Payment Certificate — past 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Submit if enrolled in NHI during any part of the past 1 year.",
+      "periodYears": 1,
+      "noteEn": "Redact insurer number and insured person symbol/number.",
+      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗り。"
+    },
+    {
+      "seq": 10,
+      "docId": "national_health_insurance_receipts",
+      "nameJa": "直近1年間の国民健康保険料（税）領収証書（写し）",
+      "nameEn": "National Health Insurance Premium Receipts — past 1 year (copy)",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Submit if enrolled in NHI during any part of the past 1 year.",
+      "periodYears": 1,
+      "noteEn": "Redact insurer number and insured person symbol/number.",
+      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗り。"
+    },
+    {
+      "seq": 11,
+      "docId": "employee_health_pension_receipts",
+      "nameJa": "直近1年間の健康保険・厚生年金保険料領収証書（写し）",
+      "nameEn": "Employee Health & Welfare Pension Insurance Premium Receipts — past 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Submit either #11 or #12 if you operated a social insurance covered business during the past 1 year.",
+      "periodYears": 1,
+      "noteEn": null,
+      "noteJa": null
+    },
+    {
+      "seq": 12,
+      "docId": "social_insurance_payment_cert",
+      "nameJa": "直近1年間の社会保険料納入証明書又は社会保険料納入確認（申請）書",
+      "nameEn": "Social Insurance Premium Payment Certificate — past 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Alternative to #11 for business owners.",
+      "periodYears": 1,
+      "noteEn": null,
+      "noteJa": null
+    },
+    {
+      "seq": 13,
+      "docId": "jskip_qualification_docs",
+      "nameJa": "学歴又は職歴を証する文書（卒業証明書、在職証明書等）",
+      "nameEn": "Academic or Work Experience Credentials (graduation certificate, employment certificate, etc.)",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": null,
+      "noteEn": "Requirements vary by activity type. See the ISA website on the Special Highly Skilled Professional Program (J-Skip) for details on what credentials are required for your activity category. Previously submitted materials may be reused via the document reuse request form.",
+      "noteJa": "従事する活動に応じて要件が異なります。出入国在留管理庁ホームページ「特別高度人材制度（J-Skip）」を参照。過去に提出した資料を転用する場合は資料転用願出書を提出。"
+    },
+    {
+      "seq": 14,
+      "docId": "annual_income_proof",
+      "nameJa": "年収を証する文書",
+      "nameEn": "Proof of Annual Income",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": null,
+      "noteEn": "Document proving the annual income expected from your employer over the coming year.",
+      "noteJa": "今後1年間に所属機関から受ける（予定）年収を証する資料を提出してください。"
+    }
+  ]
+}

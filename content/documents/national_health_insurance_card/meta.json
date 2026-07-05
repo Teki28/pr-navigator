@@ -1,0 +1,8 @@
+{
+  "id": "national_health_insurance_card",
+  "category": "insurance",
+  "agency": "Municipal office (市区町村役場)",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "j_skip_certificate",
+  "category": "jskip",
+  "agency": "Immigration Services Agency (出入国在留管理庁) — affixed to passport",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

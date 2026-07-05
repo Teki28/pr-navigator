@@ -1,0 +1,8 @@
+{
+  "id": "guarantor_id_docs",
+  "category": "application",
+  "agency": "Guarantor's own documents (身元保証人の身分書類)",
+  "obtainMethod": "prepare",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

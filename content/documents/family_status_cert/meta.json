@@ -1,0 +1,8 @@
+{
+  "id": "family_status_cert",
+  "category": "family",
+  "agency": "Municipal office / Home country authority (市区町村役場 / 本国機関)",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

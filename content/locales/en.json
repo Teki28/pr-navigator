@@ -236,6 +236,174 @@
       "pro2": "Can be combined with most other visa types as the base",
       "con1": "No official certificate — applicant must self-document J-Skip eligibility thoroughly",
       "con2": "Higher uncertainty: ISA judgment on eligibility is discretionary without the formal stamp"
+    },
+    "4_2_1": {
+      "title": "Track 4-2-1 — HSP 80 pts (イ) — Spouse of Japanese National",
+      "summary": "For applicants who had 80+ HSP points 1 year ago and currently hold a spouse-of-Japanese-national visa. Combines family relationship docs with HSP point evidence.",
+      "pro1": "Still benefits from the 1-year shortened residency window",
+      "pro2": "Accommodates applicants whose visa status changed after the HSP assessment",
+      "con1": "Must submit HSP point sheets for both the current date AND 1 year ago",
+      "con2": "Family and spousal documents must also be submitted alongside HSP materials"
+    },
+    "4_2_2": {
+      "title": "Track 4-2-2 — HSP 80 pts (イ) — Child of Japanese National",
+      "summary": "For applicants who had 80+ HSP points 1 year ago and currently hold a child-of-Japanese-national visa. Combines family docs with HSP point sheets.",
+      "pro1": "Still benefits from the 1-year shortened residency window",
+      "pro2": "Accommodates applicants whose visa status changed after the HSP assessment",
+      "con1": "Must submit HSP point sheets for both the current date AND 1 year ago",
+      "con2": "Family and spousal/child documents must also be submitted alongside HSP materials"
+    },
+    "4_2_3": {
+      "title": "Track 4-2-3 — HSP 80 pts (イ) — Spouse of Permanent Resident",
+      "summary": "For applicants who had 80+ HSP points 1 year ago and currently hold a spouse-of-PR/SPR visa. Combines spousal family docs with HSP point evidence.",
+      "pro1": "Still benefits from the 1-year shortened residency window",
+      "pro2": "Accommodates applicants whose visa status changed after the HSP assessment",
+      "con1": "Must submit HSP point sheets for both the current date AND 1 year ago",
+      "con2": "Family and spousal/child documents must also be submitted alongside HSP materials"
+    },
+    "4_2_4": {
+      "title": "Track 4-2-4 — HSP 80 pts (イ) — Child of Permanent Resident",
+      "summary": "For applicants who had 80+ HSP points 1 year ago and currently hold a child-of-PR/SPR visa. Combines family docs with HSP point evidence.",
+      "pro1": "Still benefits from the 1-year shortened residency window",
+      "pro2": "Accommodates applicants whose visa status changed after the HSP assessment",
+      "con1": "Must submit HSP point sheets for both the current date AND 1 year ago",
+      "con2": "Family and spousal/child documents must also be submitted alongside HSP materials"
+    },
+    "4_2_5": {
+      "title": "Track 4-2-5 — HSP 80 pts (イ) — Long-Term Resident (定住者)",
+      "summary": "For applicants who had 80+ HSP points 1 year ago and currently hold a 定住者 (Long-Term Resident) visa. Combines long-term resident docs with HSP point evidence.",
+      "pro1": "Still benefits from the 1-year shortened residency window",
+      "pro2": "Accommodates applicants whose visa status changed after the HSP assessment",
+      "con1": "Must submit HSP point sheets for both the current date AND 1 year ago",
+      "con2": "Long-term resident documents must also be submitted alongside HSP materials"
+    },
+    "4_2_6": {
+      "title": "Track 4-2-6 — HSP 80 pts (イ) — Work Visa",
+      "summary": "For applicants who had 80+ HSP points 1 year ago and currently hold a work visa. Combines standard employment docs with HSP point evidence.",
+      "pro1": "Still benefits from the 1-year shortened residency window",
+      "pro2": "Accommodates applicants whose visa status changed after the HSP assessment",
+      "con1": "Must submit HSP point sheets for both the current date AND 1 year ago",
+      "con2": "Employment documents must also be submitted alongside HSP materials"
+    },
+    "4_2_7": {
+      "title": "Track 4-2-7 — HSP 80 pts (イ) — Family Stay (家族滞在)",
+      "summary": "For applicants who had 80+ HSP points 1 year ago and currently hold a 家族滞在 (Family Stay) visa. Combines family-stay dependent docs with HSP point evidence.",
+      "pro1": "Still benefits from the 1-year shortened residency window",
+      "pro2": "Accommodates applicants whose visa status changed after the HSP assessment",
+      "con1": "Must submit HSP point sheets for both the current date AND 1 year ago",
+      "con2": "Family stay supporting household documents must also be submitted alongside HSP materials"
+    },
+    "4_4_1": {
+      "title": "Track 4-4-1 — HSP 70 pts (イ) — Spouse of Japanese National",
+      "summary": "For applicants who had 70+ HSP points 3 years ago and currently hold a spouse-of-Japanese-national visa. Combines family relationship docs with HSP point evidence.",
+      "pro1": "Usable even if the applicant has since switched to a different visa",
+      "pro2": "70-point threshold gives access to the HSP track for a broader pool",
+      "con1": "Must submit HSP point sheets for both now AND 3 years ago",
+      "con2": "Family and spousal documents must also be submitted alongside HSP materials"
+    },
+    "4_4_2": {
+      "title": "Track 4-4-2 — HSP 70 pts (イ) — Child of Japanese National",
+      "summary": "For applicants who had 70+ HSP points 3 years ago and currently hold a child-of-Japanese-national visa. Combines family docs with HSP point sheets.",
+      "pro1": "Usable even if the applicant has since switched to a different visa",
+      "pro2": "70-point threshold gives access to the HSP track for a broader pool",
+      "con1": "Must submit HSP point sheets for both now AND 3 years ago",
+      "con2": "Family and spousal/child documents must also be submitted alongside HSP materials"
+    },
+    "4_4_3": {
+      "title": "Track 4-4-3 — HSP 70 pts (イ) — Spouse of Permanent Resident",
+      "summary": "For applicants who had 70+ HSP points 3 years ago and currently hold a spouse-of-PR/SPR visa. Combines spousal family docs with HSP point evidence.",
+      "pro1": "Usable even if the applicant has since switched to a different visa",
+      "pro2": "70-point threshold gives access to the HSP track for a broader pool",
+      "con1": "Must submit HSP point sheets for both now AND 3 years ago",
+      "con2": "Family and spousal/child documents must also be submitted alongside HSP materials"
+    },
+    "4_4_4": {
+      "title": "Track 4-4-4 — HSP 70 pts (イ) — Child of Permanent Resident",
+      "summary": "For applicants who had 70+ HSP points 3 years ago and currently hold a child-of-PR/SPR visa. Combines family docs with HSP point evidence.",
+      "pro1": "Usable even if the applicant has since switched to a different visa",
+      "pro2": "70-point threshold gives access to the HSP track for a broader pool",
+      "con1": "Must submit HSP point sheets for both now AND 3 years ago",
+      "con2": "Family and spousal/child documents must also be submitted alongside HSP materials"
+    },
+    "4_4_5": {
+      "title": "Track 4-4-5 — HSP 70 pts (イ) — Long-Term Resident (定住者)",
+      "summary": "For applicants who had 70+ HSP points 3 years ago and currently hold a 定住者 (Long-Term Resident) visa. Combines long-term resident docs with HSP point evidence.",
+      "pro1": "Usable even if the applicant has since switched to a different visa",
+      "pro2": "70-point threshold gives access to the HSP track for a broader pool",
+      "con1": "Must submit HSP point sheets for both now AND 3 years ago",
+      "con2": "Long-term resident documents must also be submitted alongside HSP materials"
+    },
+    "4_4_6": {
+      "title": "Track 4-4-6 — HSP 70 pts (イ) — Work Visa",
+      "summary": "For applicants who had 70+ HSP points 3 years ago and currently hold a work visa. Combines standard employment docs with HSP point evidence.",
+      "pro1": "Usable even if the applicant has since switched to a different visa",
+      "pro2": "70-point threshold gives access to the HSP track for a broader pool",
+      "con1": "Must submit HSP point sheets for both now AND 3 years ago",
+      "con2": "Employment documents must also be submitted alongside HSP materials"
+    },
+    "4_4_7": {
+      "title": "Track 4-4-7 — HSP 70 pts (イ) — Family Stay (家族滞在)",
+      "summary": "For applicants who had 70+ HSP points 3 years ago and currently hold a 家族滞在 (Family Stay) visa. Combines family-stay dependent docs with HSP point evidence.",
+      "pro1": "Usable even if the applicant has since switched to a different visa",
+      "pro2": "70-point threshold gives access to the HSP track for a broader pool",
+      "con1": "Must submit HSP point sheets for both now AND 3 years ago",
+      "con2": "Family stay supporting household documents must also be submitted alongside HSP materials"
+    },
+    "5_2_1": {
+      "title": "Track 5-2-1 — J-Skip (Unconfirmed) — Spouse of Japanese National",
+      "summary": "For J-Skip-eligible applicants without official recognition who currently hold a spouse-of-Japanese-national visa. Combines spousal family docs with self-documented J-Skip eligibility.",
+      "pro1": "Allows access to the J-Skip benefit period without prior formal recognition",
+      "pro2": "Can be combined with the applicant's current visa type as the base",
+      "con1": "No official certificate — applicant must self-document J-Skip eligibility thoroughly",
+      "con2": "Higher uncertainty: ISA judgment on eligibility is discretionary without the formal stamp"
+    },
+    "5_2_2": {
+      "title": "Track 5-2-2 — J-Skip (Unconfirmed) — Child of Japanese National",
+      "summary": "For J-Skip-eligible applicants without official recognition who currently hold a child-of-Japanese-national visa. Combines family docs with self-documented J-Skip eligibility.",
+      "pro1": "Allows access to the J-Skip benefit period without prior formal recognition",
+      "pro2": "Can be combined with the applicant's current visa type as the base",
+      "con1": "No official certificate — applicant must self-document J-Skip eligibility thoroughly",
+      "con2": "Higher uncertainty: ISA judgment on eligibility is discretionary without the formal stamp"
+    },
+    "5_2_3": {
+      "title": "Track 5-2-3 — J-Skip (Unconfirmed) — Spouse of Permanent Resident",
+      "summary": "For J-Skip-eligible applicants without official recognition who currently hold a spouse-of-PR/SPR visa. Combines spousal docs with self-documented J-Skip eligibility.",
+      "pro1": "Allows access to the J-Skip benefit period without prior formal recognition",
+      "pro2": "Can be combined with the applicant's current visa type as the base",
+      "con1": "No official certificate — applicant must self-document J-Skip eligibility thoroughly",
+      "con2": "Higher uncertainty: ISA judgment on eligibility is discretionary without the formal stamp"
+    },
+    "5_2_4": {
+      "title": "Track 5-2-4 — J-Skip (Unconfirmed) — Child of Permanent Resident",
+      "summary": "For J-Skip-eligible applicants without official recognition who currently hold a child-of-PR/SPR visa. Combines family docs with self-documented J-Skip eligibility.",
+      "pro1": "Allows access to the J-Skip benefit period without prior formal recognition",
+      "pro2": "Can be combined with the applicant's current visa type as the base",
+      "con1": "No official certificate — applicant must self-document J-Skip eligibility thoroughly",
+      "con2": "Higher uncertainty: ISA judgment on eligibility is discretionary without the formal stamp"
+    },
+    "5_2_5": {
+      "title": "Track 5-2-5 — J-Skip (Unconfirmed) — Long-Term Resident (定住者)",
+      "summary": "For J-Skip-eligible applicants without official recognition who currently hold a 定住者 (Long-Term Resident) visa. Combines long-term resident docs with self-documented J-Skip eligibility.",
+      "pro1": "Allows access to the J-Skip benefit period without prior formal recognition",
+      "pro2": "Can be combined with the applicant's current visa type as the base",
+      "con1": "No official certificate — applicant must self-document J-Skip eligibility thoroughly",
+      "con2": "Higher uncertainty: ISA judgment on eligibility is discretionary without the formal stamp"
+    },
+    "5_2_6": {
+      "title": "Track 5-2-6 — J-Skip (Unconfirmed) — Work Visa",
+      "summary": "For J-Skip-eligible applicants without official recognition who currently hold a work visa. Combines employment docs with self-documented J-Skip eligibility.",
+      "pro1": "Allows access to the J-Skip benefit period without prior formal recognition",
+      "pro2": "Can be combined with the applicant's current visa type as the base",
+      "con1": "No official certificate — applicant must self-document J-Skip eligibility thoroughly",
+      "con2": "Higher uncertainty: ISA judgment on eligibility is discretionary without the formal stamp"
+    },
+    "5_2_7": {
+      "title": "Track 5-2-7 — J-Skip (Unconfirmed) — Family Stay (家族滞在)",
+      "summary": "For J-Skip-eligible applicants without official recognition who currently hold a 家族滞在 (Family Stay) visa. Combines family-stay dependent docs with self-documented J-Skip eligibility.",
+      "pro1": "Allows access to the J-Skip benefit period without prior formal recognition",
+      "pro2": "Can be combined with the applicant's current visa type as the base",
+      "con1": "No official certificate — applicant must self-document J-Skip eligibility thoroughly",
+      "con2": "Higher uncertainty: ISA judgment on eligibility is discretionary without the formal stamp"
     }
   },
   "questions": {

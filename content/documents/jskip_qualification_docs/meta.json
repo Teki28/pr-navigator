@@ -1,0 +1,8 @@
+{
+  "id": "jskip_qualification_docs",
+  "category": "jskip",
+  "agency": "Academic institutions / Employers (学校 / 勤務先)",
+  "obtainMethod": "prepare",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

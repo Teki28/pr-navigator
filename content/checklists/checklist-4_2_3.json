@@ -1,0 +1,241 @@
+{
+  "checklistId": "4_2_3",
+  "trackId": "4_2_3",
+  "titleEn": "80+ HSP Points — Not currently on HSP visa, but had 80+ points 1 year ago — Spouse of Permanent Resident / SPR",
+  "titleJa": "高度専門職80点以上・高度専門職ビザ非保持者（申請1年前も80点以上）（永住者の配偶者）",
+  "sourceFile": "docs/checklist/4-2.md",
+  "notes": [
+    "This checklist has two parts: (A) base documents depending on your current visa type, and (B) HSP-specific tax/insurance/pension documents and point evidence.",
+    "For Part A, refer to the checklist corresponding to your current visa and submit the specified items from that checklist.",
+    "Japanese-issued certificates must be dated within 3 months of application.",
+    "Documents in foreign languages must include a Japanese translation.",
+    "Additional documents may be requested during the review process."
+  ],
+  "documents": [
+    {
+      "seq": 1,
+      "docId": "application_form",
+      "nameJa": "在留資格・身分関係に応じた書類（一覧表の番号2以降の提出書類を除く）",
+      "nameEn": "Base Documents per Your Current Visa Type (excluding items #2+ in this list)",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": null,
+      "noteEn": "Submit base documents from the checklist matching your current visa type:\n• Spouse of Japanese national: items #1–6 and #18–21 from checklist-1_1\n• Child of Japanese national or child of PR/SPR: items #1–5 and #17–19 from checklist-1_2 or checklist-1_4\n• Spouse of PR/SPR: items #1–5 and #17–20 from checklist-1_3\n• Long-term resident (定住者): items #1–6 and #18–22 from checklist-2_1\n• Employment visa: items #1–5 and #17–21 from checklist-3_1\n• Family stay visa: items #1–6 and #18–22 from checklist-3_2",
+      "noteJa": "現在の在留資格に応じた提出書類一覧表の対応番号の書類を提出。詳細は各一覧表参照。"
+    },
+    {
+      "seq": 2,
+      "docId": "tax_certificate",
+      "nameJa": "直近1年分の住民税の課税（又は非課税）証明書",
+      "nameEn": "Municipal Resident Tax Certificate — most recent 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": 1,
+      "noteEn": "Submit 1 year regardless of your base visa type. If not available, substitute with withholding tax slip or pay stubs. Confirm no missed or late payments.",
+      "noteJa": "現在の在留資格にかかわらず直近1年分を提出。提出できない場合は給与所得の源泉徴収票または給与明細書等で代替可。"
+    },
+    {
+      "seq": 3,
+      "docId": "residence_tax_payment_cert",
+      "nameJa": "直近1年分の住民税の納税証明書",
+      "nameEn": "Municipal Resident Tax Payment Certificate — most recent 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": 1,
+      "noteEn": null,
+      "noteJa": null
+    },
+    {
+      "seq": 4,
+      "docId": "residence_tax_timely_proof",
+      "nameJa": "直近1年間において住民税を適正な時期に納めていることを証明する資料",
+      "nameEn": "Proof of Timely Resident Tax Payments — most recent 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Required only if tax was NOT withheld at source during any part of the past year.",
+      "periodYears": 1,
+      "noteEn": "Bank passbook copy or receipts.",
+      "noteJa": "通帳の写し、領収証書等。"
+    },
+    {
+      "seq": 5,
+      "docId": "national_tax_cert",
+      "nameJa": "国税の納税証明書（その3）",
+      "nameEn": "National Tax Payment Certificate — Form 3",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": null,
+      "noteEn": "All 5 national tax types. Issued by Tax Office.",
+      "noteJa": "5税目全て。税務署から発行。"
+    },
+    {
+      "seq": 6,
+      "docId": "pension_record",
+      "nameJa": "年金事務所発行の「被保険者記録照会回答票」「被保険者記録照会（納付Ⅰ）」「被保険者記録照会（納付Ⅱ）」",
+      "nameEn": "Pension Enrollment & Contribution Record (issued by Pension Office)",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": 1,
+      "noteEn": "Alternatives: nenkin statement (full record, letter format), Nenkin Net monthly record, or national pension receipts for past 1 year. Redact Basic Pension Number.",
+      "noteJa": "代替可：ねんきん定期便（封書形式のみ）、ねんきんネットの各月記録、国民年金保険料領収証書（12か月分）。基礎年金番号は黒塗り。"
+    },
+    {
+      "seq": 7,
+      "docId": "health_insurance_card",
+      "nameJa": "世帯全員分の健康保険被保険者証（写し）",
+      "nameEn": "Employee Health Insurance Card — All Household Members (copy)",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Submit if currently enrolled in Employee Health Insurance. If enrolled for entire past 1 year, items #8–#10 are not needed.",
+      "periodYears": null,
+      "noteEn": "Redact insurer number and insured person symbol/number.",
+      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗りにして提出。"
+    },
+    {
+      "seq": 8,
+      "docId": "national_health_insurance_card",
+      "nameJa": "世帯全員分の国民健康保険被保険者証（写し）",
+      "nameEn": "National Health Insurance Card — All Household Members (copy)",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Submit if currently enrolled in National Health Insurance.",
+      "periodYears": null,
+      "noteEn": "Redact insurer number and insured person symbol/number.",
+      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗り。"
+    },
+    {
+      "seq": 9,
+      "docId": "national_health_insurance_payment_cert",
+      "nameJa": "直近1年間の国民健康保険料（税）納付証明書",
+      "nameEn": "National Health Insurance Premium Payment Certificate — past 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Submit if enrolled in NHI during any part of the past 1 year.",
+      "periodYears": 1,
+      "noteEn": "Redact insurer number and insured person symbol/number.",
+      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗り。"
+    },
+    {
+      "seq": 10,
+      "docId": "national_health_insurance_receipts",
+      "nameJa": "直近1年間の国民健康保険料（税）領収証書（写し）",
+      "nameEn": "National Health Insurance Premium Receipts — past 1 year (copy)",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Submit if enrolled in NHI during any part of the past 1 year.",
+      "periodYears": 1,
+      "noteEn": "Redact insurer number and insured person symbol/number.",
+      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗り。"
+    },
+    {
+      "seq": 11,
+      "docId": "employee_health_pension_receipts",
+      "nameJa": "直近1年間の健康保険・厚生年金保険料領収証書（写し）",
+      "nameEn": "Employee Health & Welfare Pension Insurance Premium Receipts — past 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Submit either #11 or #12 if you operated a social insurance covered business during the past 1 year.",
+      "periodYears": 1,
+      "noteEn": null,
+      "noteJa": null
+    },
+    {
+      "seq": 12,
+      "docId": "social_insurance_payment_cert",
+      "nameJa": "直近1年間の社会保険料納入証明書又は社会保険料納入確認（申請）書",
+      "nameEn": "Social Insurance Premium Payment Certificate — past 1 year",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": false,
+      "conditional": true,
+      "conditionNote": "Alternative to #11 for business owners.",
+      "periodYears": 1,
+      "noteEn": null,
+      "noteJa": null
+    },
+    {
+      "seq": 13,
+      "docId": "hsp_point_sheet",
+      "nameJa": "高度専門職ポイント計算表（永住許可申請の時点のもの）",
+      "nameEn": "HSP Point Calculation Table — as of the application date",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": null,
+      "noteEn": "Must show 80+ points. Use the activity category table current at time of application.",
+      "noteJa": "80点以上のもの。活動区分に応じた現在の計算表を使用。"
+    },
+    {
+      "seq": 14,
+      "docId": "hsp_point_sheet_1yr_ago",
+      "nameJa": "高度専門職ポイント計算表（永住許可申請の1年前の時点のもの）",
+      "nameEn": "HSP Point Calculation Table — as of 1 year before the application date",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": null,
+      "noteEn": "Calculate using the current point table but as of 1 year before the application date. Must show 80+ points. Note: if 70–79 points at this point in time, see ISA website for alternative pathway.",
+      "noteJa": "現在のポイント計算表に基づき永住許可申請の1年前の時点で計算したもの。80点以上であることが必要。70点以上80点未満の場合は出入国在留管理庁ホームページ参照。"
+    },
+    {
+      "seq": 15,
+      "docId": "hsp_supporting_docs",
+      "nameJa": "ポイント計算の各項目に関する疎明資料",
+      "nameEn": "Supporting Documents for HSP Point Calculation Items",
+      "submittedBy": [
+        "applicant"
+      ],
+      "required": true,
+      "conditional": false,
+      "conditionNote": null,
+      "periodYears": null,
+      "noteEn": "Submit evidence confirming total points are 80+. You do not need to submit evidence for every item.",
+      "noteJa": "ポイントの合計が80点以上であることを確認できる資料を提出。全項目の疎明資料を提出する必要はありません。"
+    }
+  ]
+}

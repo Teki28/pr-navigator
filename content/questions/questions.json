@@ -21,6 +21,7 @@
     "type": "boolean",
     "labelKey": "q.j_skip_unconfirmed_eligible.label",
     "next": [
+      { "if": { "var": "j_skip_unconfirmed_eligible", "op": "==", "value": true }, "goto": "current_visa" },
       { "default": true, "goto": "hsp_points_band" }
     ]
   },
@@ -87,6 +88,7 @@
       { "value": "child_pr",        "labelKey": "q.current_visa.opt.child_pr"        }
     ],
     "next": [
+      { "if": { "var": "j_skip_unconfirmed_eligible", "op": "==", "value": true }, "goto": "hsp_points_band" },
       {
         "if": { "var": "current_visa", "op": "in", "value": ["work", "teijusha", "family_stay"] },
         "goto": "also_family_member"

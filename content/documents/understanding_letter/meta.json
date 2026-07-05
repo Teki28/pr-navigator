@@ -1,0 +1,8 @@
+{
+  "id": "understanding_letter",
+  "category": "application",
+  "agency": "Immigration Services Agency (出入国在留管理庁)",
+  "obtainMethod": "download",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "marriage_certificate",
+  "category": "family",
+  "agency": "Applicant's home country authority / Municipal office (本国機関 / 市区町村役場)",
+  "obtainMethod": "in-person",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

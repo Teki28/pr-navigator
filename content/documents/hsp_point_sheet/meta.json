@@ -1,0 +1,8 @@
+{
+  "id": "hsp_point_sheet",
+  "category": "hsp",
+  "agency": "Immigration Services Agency (出入国在留管理庁) — form download",
+  "obtainMethod": "download",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}

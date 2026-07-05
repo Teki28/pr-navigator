@@ -1,0 +1,8 @@
+{
+  "id": "employee_health_pension_receipts",
+  "category": "insurance",
+  "agency": "Japan Pension Service (日本年金機構)",
+  "obtainMethod": "prepare",
+  "links": [],
+  "guidance": { "en": "guidance.en.md" }
+}
