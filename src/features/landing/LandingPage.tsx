@@ -11,7 +11,7 @@ import { LocaleSwitcher } from '../../ui/LocaleSwitcher'
 export function LandingPage() {
   const t = useT()
   const navigate = useNavigate()
-  const { questions, currentId, start, reset: resetQ } = useQuestionnaireStore()
+  const { currentId, reset: resetQ } = useQuestionnaireStore()
   const { reset: resetProfile } = useProfileStore()
   const { reset: resetResults } = useResultsStore()
   const setLastRoute = useUiStore((s) => s.setLastRoute)
@@ -22,11 +22,8 @@ export function LandingPage() {
     resetQ()
     resetProfile()
     resetResults()
-    if (questions.length > 0) {
-      start(questions[0].id)
-    }
-    setLastRoute('/questionnaire')
-    navigate('/questionnaire')
+    setLastRoute('/track-select')
+    navigate('/track-select')
   }
 
   const handleResume = () => {
