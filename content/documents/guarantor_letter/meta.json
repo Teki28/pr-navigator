@@ -4,5 +4,17 @@
   "agency": "Self-prepared by guarantor (身元保証人が作成)",
   "obtainMethod": "prepare",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Guarantor Letter",
+  "nameJa": "身元保証書",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "The guarantor is typically a Japanese national, permanent resident, or special permanent resident residing in Japan.",
+  "noteJa": "身元保証人には、通常、日本に居住する日本人、永住者又は特別永住者の方になっていただきます。"
 }

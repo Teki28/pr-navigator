@@ -4,5 +4,19 @@
   "agency": "Your employer (HR department)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+  "guidance": {
+    "en": "guidance.en.md",
+    "ja": "guidance.ja.md"
+  },
+  "nameEn": "Proof of Occupation",
+  "nameJa": "職業を証明する資料",
+  "submittedBy": [
+    "applicant",
+    "supporter"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "One of: (1) Employment certificate for company employees; (2a) Copy of tax return + (2b) business license for self-employed; (3) Written statement and supporting evidence for other cases. Self-employed persons must substantiate their occupation (e.g., corporate registration certificate).",
+  "noteJa": "会社等勤務：在職証明書、自営業等：確定申告書控えの写し及び営業許可書の写し（ある場合）、その他：職業に係る説明書及び立証資料。両者とも無職の場合もその旨の説明書を提出。"
 }

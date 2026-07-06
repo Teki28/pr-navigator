@@ -536,7 +536,14 @@
     "dropzone": "Drop a file here, or click to browse",
     "uploaded": "File uploaded",
     "notStarted": "Not started",
-    "confirmDelete": "Remove the stored file for this document?"
+    "confirmDelete": "Remove the stored file for this document?",
+    "submittedBy": "Submitted by",
+    "required": "Required",
+    "conditional": "Conditional",
+    "yes": "Yes",
+    "no": "No",
+    "condition": "Condition",
+    "note": "Note"
   },
   "exportImport": {
     "title": "Data & Settings",

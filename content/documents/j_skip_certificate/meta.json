@@ -4,5 +4,17 @@
   "agency": "Immigration Services Agency (出入国在留管理庁) — affixed to passport",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "J-Skip (Special Highly Skilled Professional) Certificate — copy",
+  "nameJa": "特別高度人材証明書の写し",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "This is the certificate affixed to your passport when you were recognized as a Special Highly Skilled Professional (特別高度人材) by the Immigration Services Agency.",
+  "noteJa": "「特別高度人材」に該当することの確認を受けた際に旅券に添付されるものです。"
 }

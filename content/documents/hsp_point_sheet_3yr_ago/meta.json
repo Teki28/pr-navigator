@@ -4,5 +4,17 @@
   "agency": "Immigration Services Agency (出入国在留管理庁) — form download",
   "obtainMethod": "download",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "HSP Point Calculation Table — as of 3 years before the application date",
+  "nameJa": "高度専門職ポイント計算表（永住許可申請の3年前の時点のもの）",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Calculate using the current point table but as of 3 years before the application date. Must show 70+ points.",
+  "noteJa": "現在のポイント計算表に基づき永住許可申請の3年前の時点で計算したもの。70点以上であることが必要。"
 }

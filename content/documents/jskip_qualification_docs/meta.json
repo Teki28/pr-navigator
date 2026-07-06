@@ -4,5 +4,17 @@
   "agency": "Academic institutions / Employers (学校 / 勤務先)",
   "obtainMethod": "prepare",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Academic or Work Experience Credentials (graduation certificate, employment certificate, etc.)",
+  "nameJa": "学歴又は職歴を証する文書（卒業証明書、在職証明書等）",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Requirements vary by activity type. See the ISA website on the Special Highly Skilled Professional Program (J-Skip) for details on what credentials are required for your activity category. Previously submitted materials may be reused via the document reuse request form.",
+  "noteJa": "従事する活動に応じて要件が異なります。出入国在留管理庁ホームページ「特別高度人材制度（J-Skip）」を参照。過去に提出した資料を転用する場合は資料転用願出書を提出。"
 }

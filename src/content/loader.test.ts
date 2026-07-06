@@ -163,6 +163,7 @@ describe('loadContent – ContentBundle type', () => {
       decision: DECISION as ContentBundle['decision'],
       tracks: { hsp_1yr: TRACK as ContentBundle['tracks']['hsp_1yr'] },
       documents: { passport: DOC_META as ContentBundle['documents']['passport'] },
+      checklists: {},
       manifest: MANIFEST,
     }
 

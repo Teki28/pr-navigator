@@ -4,5 +4,17 @@
   "agency": "Municipal office (市区町村役場)",
   "obtainMethod": "prepare",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "National Health Insurance Premium Receipts",
+  "nameJa": "国民健康保険料（税）領収証書（写し）",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": false,
+  "conditional": true,
+  "conditionNote": "Submit if enrolled in National Health Insurance during any part of the past 2 years. Submit all receipts for the applicable period. If unable to submit, include a written explanation (理由書).",
+  "noteEn": "Redact insurer number and insured person symbol/number. Confirm no missed or late payments.",
+  "noteJa": "保険者番号及び被保険者等記号・番号を黒塗りにして提出。未納・遅延納付がないことを確認してください。"
 }

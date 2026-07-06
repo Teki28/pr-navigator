@@ -4,5 +4,17 @@
   "agency": "Self-prepared (自作)",
   "obtainMethod": "prepare",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Reason Statement for Permanent Residence",
+  "nameJa": "理由書",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Written explanation of why you need permanent residence. Free format. Include author name and date. If written in a language other than Japanese, attach a Japanese translation.",
+  "noteJa": "永住許可を必要とする理由について、任意の様式に作成者と作成年月日を記載した上で、自由な形式で記載。日本語以外で記載する場合は翻訳文が必要。"
 }

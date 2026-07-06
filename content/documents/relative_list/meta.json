@@ -4,5 +4,17 @@
   "agency": "Self-prepared (自作)",
   "obtainMethod": "prepare",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Family Members List",
+  "nameJa": "親族一覧表",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": null,
+  "noteJa": null
 }

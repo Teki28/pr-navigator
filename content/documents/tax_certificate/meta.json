@@ -4,5 +4,18 @@
   "agency": "Municipal office (市区町村役場) or tax office (税務署)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+  "guidance": {
+    "en": "guidance.en.md",
+    "ja": "guidance.ja.md"
+  },
+  "nameEn": "Municipal Resident Tax Certificate",
+  "nameJa": "住民税の課税（又は非課税）証明書",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Issued by your city/ward/town office. Must show total annual income and tax payment status. If not available (e.g., applied within 1 year of arrival), substitute with withholding tax slip (源泉徴収票) or pay stubs. Confirm no missed or late payments.",
+  "noteJa": "お住まいの市区町村から発行。1年間の総所得及び納税状況が記載されたもの。提出できない場合は給与所得の源泉徴収票または給与明細書等で代替可。未納・遅延納付がないことを確認してください。"
 }

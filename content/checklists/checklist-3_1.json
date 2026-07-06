@@ -12,277 +12,88 @@
   ],
   "documents": [
     {
-      "seq": 1,
       "docId": "application_form",
-      "nameJa": "永住許可申請書",
-      "nameEn": "Permanent Residence Application Form",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": null,
-      "noteEn": "Download from the Immigration Services Agency website.",
-      "noteJa": "出入国在留管理庁ホームページからダウンロードできます。"
+      "periodYears": null
     },
     {
-      "seq": 2,
       "docId": "photo",
-      "nameJa": "写真（縦4cm×横3cm）",
-      "nameEn": "Passport-size Photo (4cm × 3cm)",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": null,
-      "noteEn": "Taken within 6 months. Front-facing, no hat, plain background. Under age 16 is exempt.",
-      "noteJa": "申請前6か月以内に正面から撮影された無帽、無背景、鮮明なもの。16歳未満の場合は不要。"
+      "periodYears": null
     },
     {
-      "seq": 3,
       "docId": "reason_letter",
-      "nameJa": "理由書",
-      "nameEn": "Reason Statement for Permanent Residence",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": null,
-      "noteEn": "Written explanation of why you need permanent residence. Free format. If written in a language other than Japanese, attach a Japanese translation.",
-      "noteJa": "永住許可を必要とする理由について自由な形式で記載。日本語以外で記載する場合は翻訳文が必要。"
+      "periodYears": null
     },
     {
-      "seq": 4,
       "docId": "resident_record",
-      "nameJa": "申請人を含む家族全員（世帯）の住民票",
-      "nameEn": "Resident Register for All Household Members",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": null,
-      "noteEn": "Omit My Number. Do not omit any other fields.",
-      "noteJa": "個人番号（マイナンバー）は省略し、他の事項については省略のないものを提出してください。"
+      "periodYears": null
     },
     {
-      "seq": 5,
       "docId": "employment_certificate",
-      "nameJa": "職業を証明する資料",
-      "nameEn": "Proof of Occupation",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": null,
-      "noteEn": "One of: (1) Employment certificate for company employees; (2a) Copy of tax return + (2b) business license for self-employed; (3) Written statement and supporting evidence for other cases. Self-employed persons must substantiate their occupation (e.g., corporate registration certificate).",
-      "noteJa": "在職証明書、確定申告書控えの写し及び営業許可書の写し、または職業に係る説明書及び立証資料のいずれか。自営業者は登記事項証明書等も必要。"
+      "periodYears": null
     },
     {
-      "seq": 6,
       "docId": "tax_certificate",
-      "nameJa": "直近5年分の住民税の課税（又は非課税）証明書",
-      "nameEn": "Municipal Resident Tax Certificate — most recent 5 years",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": 5,
-      "noteEn": "Issued by city/ward/town office. If 5 years not available, submit the maximum possible. Confirm no missed or late payments.",
-      "noteJa": "お住まいの市区町村から発行。直近5年分が発行されない場合は最長期間分を提出。未納・遅延納付がないことを確認してください。"
+      "periodYears": 5
     },
     {
-      "seq": 7,
       "docId": "residence_tax_payment_cert",
-      "nameJa": "直近5年分の住民税の納税証明書",
-      "nameEn": "Municipal Resident Tax Payment Certificate — most recent 5 years",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": 5,
-      "noteEn": null,
-      "noteJa": null
+      "periodYears": 5
     },
     {
-      "seq": 8,
       "docId": "residence_tax_timely_proof",
-      "nameJa": "直近5年間において住民税を適正な時期に納めていることを証明する資料",
-      "nameEn": "Proof of Timely Resident Tax Payments — most recent 5 years",
-      "submittedBy": ["applicant"],
-      "required": false,
-      "conditional": true,
-      "conditionNote": "Required only if tax was NOT withheld at source during any part of the past 5 years.",
-      "periodYears": 5,
-      "noteEn": "Bank passbook copy or receipts. Web banking screenshots acceptable.",
-      "noteJa": "通帳の写し、領収証書等。Web通帳の画面写しも可。"
+      "periodYears": 5
     },
     {
-      "seq": 9,
       "docId": "national_tax_cert",
-      "nameJa": "国税の納税証明書（その3）",
-      "nameEn": "National Tax Payment Certificate — Form 3",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": null,
-      "noteEn": "All 5 national tax types. Issued by Tax Office.",
-      "noteJa": "住所地を管轄する税務署から発行。5税目全て。"
+      "periodYears": null
     },
     {
-      "seq": 10,
       "docId": "pension_record",
-      "nameJa": "年金事務所発行の「被保険者記録照会回答票」「被保険者記録照会（納付Ⅰ）」「被保険者記録照会（納付Ⅱ）」",
-      "nameEn": "Pension Enrollment & Contribution Record (issued by Pension Office)",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": 2,
-      "noteEn": "Alternatives: nenkin statement (letter format, full record), Nenkin Net monthly record, or national pension receipts for past 2 years. Redact Basic Pension Number. Confirm no missed or late payments.",
-      "noteJa": "代替可：ねんきん定期便（封書形式のみ）、ねんきんネットの各月記録、国民年金保険料領収証書（24か月分）。基礎年金番号は黒塗り。未納・遅延納付がないことを確認してください。"
+      "periodYears": 2
     },
     {
-      "seq": 11,
       "docId": "health_insurance_card",
-      "nameJa": "世帯全員分の健康保険被保険者証（写し）",
-      "nameEn": "Employee Health Insurance Card — All Household Members (copy)",
-      "submittedBy": ["applicant"],
-      "required": false,
-      "conditional": true,
-      "conditionNote": "Submit if currently enrolled in Employee Health Insurance. If enrolled for entire past 2 years, items #12–#14 are not needed.",
-      "periodYears": null,
-      "noteEn": "Redact insurer number and insured person symbol/number.",
-      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗りにして提出。"
+      "periodYears": null
     },
     {
-      "seq": 12,
       "docId": "national_health_insurance_card",
-      "nameJa": "世帯全員分の国民健康保険被保険者証（写し）",
-      "nameEn": "National Health Insurance Card — All Household Members (copy)",
-      "submittedBy": ["applicant"],
-      "required": false,
-      "conditional": true,
-      "conditionNote": "Submit if currently enrolled in National Health Insurance.",
-      "periodYears": null,
-      "noteEn": "Redact insurer number and insured person symbol/number.",
-      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗り。"
+      "periodYears": null
     },
     {
-      "seq": 13,
       "docId": "national_health_insurance_payment_cert",
-      "nameJa": "直近2年間の国民健康保険料（税）納付証明書",
-      "nameEn": "National Health Insurance Premium Payment Certificate — past 2 years",
-      "submittedBy": ["applicant"],
-      "required": false,
-      "conditional": true,
-      "conditionNote": "Submit if enrolled in NHI during any part of the past 2 years.",
-      "periodYears": 2,
-      "noteEn": "Redact insurer number and insured person symbol/number.",
-      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗り。"
+      "periodYears": 2
     },
     {
-      "seq": 14,
       "docId": "national_health_insurance_receipts",
-      "nameJa": "直近2年間の国民健康保険料（税）領収証書（写し）",
-      "nameEn": "National Health Insurance Premium Receipts — past 2 years (copy)",
-      "submittedBy": ["applicant"],
-      "required": false,
-      "conditional": true,
-      "conditionNote": "Submit if enrolled in NHI during any part of the past 2 years.",
-      "periodYears": 2,
-      "noteEn": "Redact insurer number and insured person symbol/number.",
-      "noteJa": "保険者番号及び被保険者等記号・番号を黒塗り。"
+      "periodYears": 2
     },
     {
-      "seq": 15,
       "docId": "employee_health_pension_receipts",
-      "nameJa": "直近2年間の健康保険・厚生年金保険料領収証書（写し）",
-      "nameEn": "Employee Health & Welfare Pension Insurance Premium Receipts — past 2 years",
-      "submittedBy": ["applicant"],
-      "required": false,
-      "conditional": true,
-      "conditionNote": "Submit either #15 or #16 if you operated a social insurance covered business during the past 2 years.",
-      "periodYears": 2,
-      "noteEn": null,
-      "noteJa": null
+      "periodYears": 2
     },
     {
-      "seq": 16,
       "docId": "social_insurance_payment_cert",
-      "nameJa": "直近2年間の社会保険料納入証明書又は社会保険料納入確認（申請）書",
-      "nameEn": "Social Insurance Premium Payment Certificate — past 2 years",
-      "submittedBy": ["applicant"],
-      "required": false,
-      "conditional": true,
-      "conditionNote": "Alternative to #15 for business owners.",
-      "periodYears": 2,
-      "noteEn": null,
-      "noteJa": null
+      "periodYears": 2
     },
     {
-      "seq": 17,
       "docId": "assets_proof",
-      "nameJa": "資産を証明する資料",
-      "nameEn": "Proof of Assets",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": null,
-      "noteEn": "One of: (1) Bank passbook copy (web banking screenshots acceptable); (2) Real estate registration certificate; (3) Equivalent.",
-      "noteJa": "次のいずれか：(1) 預貯金通帳の写し（Web通帳の画面写し可）、(2) 不動産の登記事項証明書、(3) これらに準ずるもの。"
+      "periodYears": null
     },
     {
-      "seq": 18,
       "docId": "guarantor_letter",
-      "nameJa": "身元保証書",
-      "nameEn": "Guarantor Letter",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": null,
-      "noteEn": "Guarantor is typically a Japanese national, permanent resident, or special permanent resident.",
-      "noteJa": "身元保証人には、通常、日本に居住する日本人、永住者又は特別永住者の方。"
+      "periodYears": null
     },
     {
-      "seq": 19,
       "docId": "guarantor_id_docs",
-      "nameJa": "身元保証書に係る資料",
-      "nameEn": "Guarantor Identification Documents",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": null,
-      "noteEn": "Documents verifying the guarantor's identity.",
-      "noteJa": "身元保証人の身分事項を明らかにする書類（運転免許証、在留カードの写し等）。"
+      "periodYears": null
     },
     {
-      "seq": 20,
       "docId": "hsp_supporting_docs",
-      "nameJa": "我が国への貢献に係る資料（ある場合のみ）",
-      "nameEn": "Evidence of Contributions to Japan — if applicable",
-      "submittedBy": ["applicant"],
-      "required": false,
-      "conditional": true,
-      "conditionNote": "Submit only if you have made notable contributions to Japan.",
-      "periodYears": null,
-      "noteEn": "Examples: (1) commendations or awards copies; (2) recommendation letters; (3) other evidence of contributions.",
-      "noteJa": "例：(1) 表彰状・感謝状・叙勲書等の写し、(2) 推薦状、(3) 各分野において貢献があることに関する資料。"
+      "periodYears": null
     },
     {
-      "seq": 21,
       "docId": "understanding_letter",
-      "nameJa": "了解書",
-      "nameEn": "Acknowledgement Letter",
-      "submittedBy": ["applicant"],
-      "required": true,
-      "conditional": false,
-      "conditionNote": null,
-      "periodYears": null,
-      "noteEn": "Download from the Immigration Services Agency website.",
-      "noteJa": "出入国在留管理庁ホームページからダウンロードできます。"
+      "periodYears": null
     }
   ]
 }

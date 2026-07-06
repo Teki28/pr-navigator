@@ -4,5 +4,17 @@
   "agency": "Municipal office (市区町村役場)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Family Register (Full Certificate)",
+  "nameJa": "配偶者の戸籍謄本（全部事項証明書）",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": null,
+  "noteJa": null
 }

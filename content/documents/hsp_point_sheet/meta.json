@@ -4,5 +4,17 @@
   "agency": "Immigration Services Agency (出入国在留管理庁) — form download",
   "obtainMethod": "download",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "HSP Point Calculation Table — as of the application date",
+  "nameJa": "高度専門職ポイント計算表（永住許可申請の時点のもの）",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Use the calculation table corresponding to your activity category (1号イ / 1号ロ / 1号ハ). Use the table current at the time of application.",
+  "noteJa": "活動区分（高度専門職1号イ、ロ、ハ）に応じた計算表を使用。永住許可申請の時点で計算したもの。"
 }

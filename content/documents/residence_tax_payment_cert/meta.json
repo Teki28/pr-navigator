@@ -4,5 +4,17 @@
   "agency": "Municipal office (市区町村役場)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Municipal Resident Tax Payment Certificate",
+  "nameJa": "住民税の納税証明書",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Issued by your city/ward/town office. Shows payment status for each year. Can substitute either #7 or #8 if the certificate covers both total income and tax payment status.",
+  "noteJa": "お住まいの市区町村から発行。1年間の総所得及び納税状況が記載されたもの。"
 }

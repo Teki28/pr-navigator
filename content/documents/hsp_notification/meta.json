@@ -4,5 +4,17 @@
   "agency": "Immigration Services Agency (出入国在留管理庁)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "HSP Point Calculation Result Notification (Form 27-2) — copy",
+  "nameJa": "高度専門職ポイント計算結果通知書の写し（別記第27号の2様式）",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": false,
+  "conditional": true,
+  "conditionNote": "Submit #18 if you have been recognized as a Highly Skilled Foreign Professional and have resided for 1+ years under that status. Submit #19 instead if you have not received the official notification.",
+  "noteEn": "This notification is issued when the ISA grants Certificate of Eligibility or status change approval recognizing you as a Highly Skilled Foreign Professional.",
+  "noteJa": "「高度人材外国人」と認められて在留資格認定証明書の交付又は在留資格変更許可等を受けた場合に通知されるもの。"
 }

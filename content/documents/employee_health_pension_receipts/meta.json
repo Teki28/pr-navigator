@@ -4,5 +4,17 @@
   "agency": "Japan Pension Service (日本年金機構)",
   "obtainMethod": "prepare",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Employee Health & Welfare Pension Insurance Premium Receipts",
+  "nameJa": "健康保険・厚生年金保険料領収証書（写し）",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": false,
+  "conditional": true,
+  "conditionNote": "Submit either #16 or #17 if you operated a business subject to social insurance (社会保険適用事業所の事業主) during any part of the past 2 years.",
+  "noteEn": "Confirm no missed or late payments.",
+  "noteJa": "申請時の直近2年間において社会保険適用事業所の事業主であった期間がある方は16または17を提出。未納・遅延納付がないことを確認してください。"
 }

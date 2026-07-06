@@ -4,5 +4,17 @@
   "agency": "Bank / Legal Affairs Bureau (銀行 / 法務局)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Proof of Assets",
+  "nameJa": "資産を証明する資料",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "One of: (1) Bank passbook copy (web banking screenshots acceptable); (2) Real estate registration certificate (登記事項証明書); (3) Equivalent document.",
+  "noteJa": "次のいずれか：(1) 預貯金通帳の写し（Web通帳の画面写し可）、(2) 不動産の登記事項証明書、(3) これらに準ずるもの。"
 }

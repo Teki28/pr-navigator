@@ -4,5 +4,17 @@
   "agency": "Bank (bank passbook copy) / Municipal office (銀行通帳 / 市区町村役場)",
   "obtainMethod": "prepare",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Proof of Timely Resident Tax Payments",
+  "nameJa": "住民税を適正な時期に納めていることを証明する資料",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": false,
+  "conditional": true,
+  "conditionNote": "Required only if resident tax was NOT withheld at source (特別徴収 / payroll deduction) during any part of the past 3 years. If tax was withheld at source for the entire 3-year period, submit only #7 and #8.",
+  "noteEn": "Web banking screenshots showing transaction history are acceptable. If unable to submit, include a written explanation (理由書).",
+  "noteJa": "住民税が特別徴収されていない期間がある方のみ提出。Web通帳の画面写しも可。提出困難な場合は理由書を提出。"
 }
