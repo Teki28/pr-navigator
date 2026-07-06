@@ -19,7 +19,6 @@
     "tracks/track-4_2_4.json",
     "tracks/track-4_2_5.json",
     "tracks/track-4_2_6.json",
-    "tracks/track-4_2_7.json",
     "tracks/track-4_3.json",
     "tracks/track-4_4.json",
     "tracks/track-4_4_1.json",
@@ -28,7 +27,6 @@
     "tracks/track-4_4_4.json",
     "tracks/track-4_4_5.json",
     "tracks/track-4_4_6.json",
-    "tracks/track-4_4_7.json",
     "tracks/track-5_1.json",
     "tracks/track-5_2.json",
     "tracks/track-5_2_1.json",
@@ -36,8 +34,7 @@
     "tracks/track-5_2_3.json",
     "tracks/track-5_2_4.json",
     "tracks/track-5_2_5.json",
-    "tracks/track-5_2_6.json",
-    "tracks/track-5_2_7.json"
+    "tracks/track-5_2_6.json"
   ],
   "documents": [
     "documents/passport/meta.json",
