@@ -4,5 +4,17 @@
   "agency": "Guarantor's own documents (身元保証人の身分書類)",
   "obtainMethod": "prepare",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Guarantor Identification Documents",
+  "nameJa": "身元保証書に係る資料",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Documents verifying the guarantor's identity, e.g., copy of driver's license or residence card.",
+  "noteJa": "身元保証人の身分事項を明らかにする書類（運転免許証、在留カードの写し等）。"
 }

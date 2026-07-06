@@ -4,5 +4,18 @@
   "agency": "Any photo studio (証明写真)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+  "guidance": {
+    "en": "guidance.en.md",
+    "ja": "guidance.ja.md"
+  },
+  "nameEn": "Passport-size Photo (4cm × 3cm)",
+  "nameJa": "写真（縦4cm×横3cm）",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Taken within 6 months before application. Front-facing, no hat, plain background, clearly visible. Write applicant's name on the back and attach to the application form. Applicants under age 1 are exempt (rule changed as of June 14, 2026 for new residence cards).",
+  "noteJa": "申請前6か月以内に正面から撮影された無帽、無背景、鮮明なもの。裏面に氏名を記載して申請書に貼付。1歳未満の方は不要。"
 }

@@ -4,5 +4,17 @@
   "agency": "Health insurance association / Employer (健康保険組合 / 事業主)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Employee Health Insurance Card — All Household Members (copy)",
+  "nameJa": "世帯全員分の健康保険被保険者証（写し）",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": false,
+  "conditional": true,
+  "conditionNote": "Submit if currently enrolled in Employee Health Insurance (健康保険). If enrolled continuously for the entire past 2 years, items #13–#15 are not needed.",
+  "noteEn": "Redact insurer number (保険者番号) and insured person symbol/number (被保険者等記号・番号) before submitting.",
+  "noteJa": "保険者番号及び被保険者等記号・番号を黒塗りにして提出。直近2年間すべて健康保険に加入していた方は13〜15は不要。"
 }

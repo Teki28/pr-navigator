@@ -4,5 +4,18 @@
   "agency": "Immigration Services Agency (出入国在留管理庁)",
   "obtainMethod": "online | in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+  "guidance": {
+    "en": "guidance.en.md",
+    "ja": "guidance.ja.md"
+  },
+  "nameEn": "Permanent Residence Application Form",
+  "nameJa": "永住許可申請書",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Download from the Immigration Services Agency website. Ensure all required fields are completed.",
+  "noteJa": "出入国在留管理庁ホームページからダウンロードできます。必要な事項が全て記載されていることを確認してください。"
 }

@@ -4,5 +4,17 @@
   "agency": "Various (各種機関)",
   "obtainMethod": "prepare",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Supporting Documents for HSP Point Calculation Items",
+  "nameJa": "ポイント計算の各項目に関する疎明資料",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": false,
+  "conditional": true,
+  "conditionNote": "Submit only if you have made notable contributions to Japan in any field.",
+  "noteEn": "Submit evidence confirming the total points are 80+. You do not need to submit evidence for every item — only enough to verify the required score. If you are submitting item #18, supporting evidence for that notification period is not required. See the point calculation table for document examples.",
+  "noteJa": "ポイントの合計が80点以上であることを確認できる資料を提出。全項目の疎明資料を提出する必要はありません。高度専門職ポイント計算結果通知書（#18）を提出した場合は、当該時点における疎明資料の提出は不要。"
 }

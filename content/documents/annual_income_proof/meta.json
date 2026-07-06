@@ -4,5 +4,17 @@
   "agency": "Employer / Self-prepared (勤務先 / 自作)",
   "obtainMethod": "prepare",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Proof of Annual Income",
+  "nameJa": "年収を証する文書",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Document proving the annual income you are expected to receive from your employer over the coming year.",
+  "noteJa": "今後1年間に所属機関から受ける（予定）年収を証する資料を提出してください。"
 }

@@ -4,5 +4,17 @@
   "agency": "Immigration Services Agency (出入国在留管理庁)",
   "obtainMethod": "download",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Acknowledgement Letter",
+  "nameJa": "了解書",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Download from the Immigration Services Agency website.",
+  "noteJa": "出入国在留管理庁ホームページからダウンロードできます。"
 }

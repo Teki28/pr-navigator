@@ -4,5 +4,17 @@
   "agency": "Tax office (税務署)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "National Tax Payment Certificate — Form 3",
+  "nameJa": "国税の納税証明書（その3）",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Issued by your local Tax Office (税務署). Covers all 5 tax types: withholding income tax, self-assessed income tax, consumption tax, inheritance tax, and gift tax. Form 3 certifies no outstanding obligations as of the certificate date — no period specification needed. Submit certificates for all 5 tax types.",
+  "noteJa": "住所地を管轄する税務署から発行。源泉所得税、申告所得税、消費税・地方消費税、相続税、贈与税の5税目全ての納税証明書を提出。未納がないことを確認してください。"
 }

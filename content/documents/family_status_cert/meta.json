@@ -4,5 +4,17 @@
   "agency": "Municipal office / Home country authority (市区町村役場 / 本国機関)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Proof of Family Status",
+  "nameJa": "身分関係を証明する資料",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "One of: (1) Family register (戸籍謄本); (2) Birth certificate; (3) Marriage certificate; (4) Acknowledgement of paternity record (認知届の記載事項証明書); (5) Equivalent document.",
+  "noteJa": "次のいずれか：(1)戸籍謄本（全部事項証明書）、(2)出生証明書、(3)婚姻証明書、(4)認知届の記載事項証明書、(5)上記に準ずるもの。"
 }

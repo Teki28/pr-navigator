@@ -4,5 +4,17 @@
   "agency": "Applicant's home country authority / Municipal office (本国機関 / 市区町村役場)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Proof of Parent-Child Relationship — birth certificate or equivalent",
+  "nameJa": "親子関係を証明する書類（出生証明書又はこれに準ずる文書）",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "One of: (a) Birth certificate; or (b) Equivalent document proving the parent-child relationship between applicant and the permanent resident / special permanent resident parent.",
+  "noteJa": "次のいずれか：(a) 出生証明書、または (b) 申請人と永住者又は特別永住者との身分関係を証するこれに準ずる文書。"
 }

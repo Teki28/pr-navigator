@@ -4,5 +4,17 @@
   "agency": "Japan Pension Service (日本年金機構)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Social Insurance Premium Payment Certificate",
+  "nameJa": "社会保険料納入証明書又は社会保険料納入確認（申請）書",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": false,
+  "conditional": true,
+  "conditionNote": "Alternative to #16 for business owners. Certifies no outstanding social insurance premiums.",
+  "noteEn": null,
+  "noteJa": null
 }

@@ -4,5 +4,18 @@
   "agency": "Municipal office (市区町村役場)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md", "ja": "guidance.ja.md" }
+  "guidance": {
+    "en": "guidance.en.md",
+    "ja": "guidance.ja.md"
+  },
+  "nameEn": "Resident Register for All Household Members",
+  "nameJa": "申請人を含む家族全員（世帯）の住民票",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "Omit My Number (individual number). Do not omit any other fields.",
+  "noteJa": "個人番号（マイナンバー）は省略し、他の事項については省略のないものを提出してください。"
 }

@@ -4,5 +4,17 @@
   "agency": "Applicant's home country authority / Municipal office (本国機関 / 市区町村役場)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "Marriage Certificate",
+  "nameJa": "申請人の国籍国の機関から発行された婚姻証明書",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": true,
+  "conditional": false,
+  "conditionNote": null,
+  "noteEn": "One of: (a) Marriage certificate; or (b) Equivalent document proving the relationship between applicant and spouse.",
+  "noteJa": "次のいずれか：(a) 配偶者との婚姻証明書、または (b) 申請人と配偶者の身分関係を証するこれに準ずる文書。"
 }

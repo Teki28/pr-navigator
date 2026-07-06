@@ -4,5 +4,17 @@
   "agency": "Municipal office (市区町村役場)",
   "obtainMethod": "in-person",
   "links": [],
-  "guidance": { "en": "guidance.en.md" }
+  "guidance": {
+    "en": "guidance.en.md"
+  },
+  "nameEn": "National Health Insurance Premium Payment Certificate",
+  "nameJa": "国民健康保険料（税）納付証明書",
+  "submittedBy": [
+    "applicant"
+  ],
+  "required": false,
+  "conditional": true,
+  "conditionNote": "Submit if enrolled in National Health Insurance during any part of the past 2 years. Confirm no missed or late payments.",
+  "noteEn": "Redact insurer number and insured person symbol/number. Confirm no missed or late payments.",
+  "noteJa": "保険者番号及び被保険者等記号・番号を黒塗りにして提出。未納・遅延納付がないことを確認してください。"
 }
