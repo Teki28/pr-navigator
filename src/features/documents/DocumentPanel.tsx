@@ -274,6 +274,40 @@ export function DocumentPanel({ docId, onClose }: DocumentPanelProps) {
             </div>
           )}
 
+          {/* Document details from meta */}
+          {docMeta && (docMeta.submittedBy || docMeta.required !== undefined || docMeta.conditionNote) && (
+            <div className="glass-thin rounded-lg p-4 flex flex-col gap-2">
+              {docMeta.submittedBy && (
+                <p className="text-caption text-text-secondary">
+                  <span className="font-medium text-text-primary">{t('docpanel.submittedBy')}:</span>{' '}
+                  {docMeta.submittedBy.join(', ')}
+                </p>
+              )}
+              {docMeta.required !== undefined && (
+                <p className="text-caption text-text-secondary">
+                  <span className="font-medium text-text-primary">{t('docpanel.required')}:</span>{' '}
+                  {docMeta.conditional
+                    ? t('docpanel.conditional')
+                    : docMeta.required
+                      ? t('docpanel.yes')
+                      : t('docpanel.no')}
+                </p>
+              )}
+              {docMeta.conditional && docMeta.conditionNote && (
+                <p className="text-caption text-text-secondary">
+                  <span className="font-medium text-text-primary">{t('docpanel.condition')}:</span>{' '}
+                  {docMeta.conditionNote}
+                </p>
+              )}
+              {(locale === 'ja' ? docMeta.noteJa : docMeta.noteEn) && (
+                <p className="text-caption text-text-secondary">
+                  <span className="font-medium text-text-primary">{t('docpanel.note')}:</span>{' '}
+                  {locale === 'ja' ? docMeta.noteJa : docMeta.noteEn}
+                </p>
+              )}
+            </div>
+          )}
+
           {/* Actions */}
           <div className="flex flex-col gap-3">
             <p className="text-caption font-medium text-text-primary">{t('docpanel.actions')}</p>

@@ -143,10 +143,44 @@ export const DocumentMetaSchema = z.object({
   obtainMethod: z.string(),
   links: z.array(z.string()),
   guidance: z.record(z.string(), z.string()),
+  // New fields (optional for backward compatibility):
+  nameEn: z.string().optional(),
+  nameJa: z.string().optional(),
+  submittedBy: z.array(z.string()).optional(),
+  required: z.boolean().optional(),
+  conditional: z.boolean().optional(),
+  conditionNote: z.string().nullable().optional(),
+  noteEn: z.string().nullable().optional(),
+  noteJa: z.string().nullable().optional(),
 })
 export type DocumentMeta = z.infer<typeof DocumentMetaSchema>
 
 export type DocumentMetaMap = Record<string, DocumentMeta>
+
+// ---------------------------------------------------------------------------
+// Checklist
+// ---------------------------------------------------------------------------
+
+// Checklist document entry (slim — only docId and period after migration)
+export const ChecklistDocSchema = z.object({
+  docId: z.string(),
+  periodYears: z.number().nullable().optional(),
+})
+export type ChecklistDoc = z.infer<typeof ChecklistDocSchema>
+
+// Checklist file schema
+export const ChecklistSchema = z.object({
+  checklistId: z.string(),
+  trackId: z.string(),
+  titleEn: z.string(),
+  titleJa: z.string(),
+  sourceFile: z.string().optional(),
+  notes: z.array(z.string()).optional(),
+  documents: z.array(ChecklistDocSchema),
+})
+export type Checklist = z.infer<typeof ChecklistSchema>
+
+export type ChecklistMap = Record<string, Checklist>
 
 // ---------------------------------------------------------------------------
 // Locale
@@ -165,6 +199,7 @@ export const ContentManifestSchema = z.object({
   decision: z.string(),
   tracks: z.array(z.string()),
   documents: z.array(z.string()),
+  checklists: z.array(z.string()).optional(),  // optional for backward compat
   locales: z.array(z.string()),
 })
 export type ContentManifest = z.infer<typeof ContentManifestSchema>
@@ -178,5 +213,6 @@ export interface ContentBundle {
   decision: DecisionRuleset
   tracks: TrackMap
   documents: DocumentMetaMap
+  checklists: ChecklistMap  // new
   manifest: ContentManifest
 }

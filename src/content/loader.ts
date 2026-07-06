@@ -1,10 +1,12 @@
 import { z } from 'zod'
 import {
+  ChecklistSchema,
   ContentManifestSchema,
   DecisionRulesetSchema,
   DocumentMetaSchema,
   QuestionSchema,
   TrackSchema,
+  type ChecklistMap,
   type ContentBundle,
   type DocumentMetaMap,
   type Locale,
@@ -32,6 +34,10 @@ const trackModules = import.meta.glob<unknown>('/content/tracks/*.json', {
   import: 'default',
 })
 const docMetaModules = import.meta.glob<unknown>('/content/documents/*/meta.json', {
+  eager: true,
+  import: 'default',
+})
+const checklistModules = import.meta.glob<unknown>('/content/checklists/*.json', {
   eager: true,
   import: 'default',
 })
@@ -87,7 +93,13 @@ export async function loadContent(): Promise<ContentBundle> {
     documents[doc.id] = doc
   }
 
-  cached = { questions, decision, tracks, documents, manifest }
+  const checklists: ChecklistMap = {}
+  for (const raw of Object.values(checklistModules)) {
+    const checklist = ChecklistSchema.parse(raw)
+    checklists[checklist.checklistId] = checklist
+  }
+
+  cached = { questions, decision, tracks, documents, checklists, manifest }
   return cached
 }
 
