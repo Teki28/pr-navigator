@@ -6,7 +6,7 @@
  */
 import 'fake-indexeddb/auto'
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
-import { IDBFactory } from 'fake-indexeddb'
+
 import { useProfileStore } from '../store/useProfileStore'
 import { useQuestionnaireStore } from '../store/useQuestionnaireStore'
 import { useResultsStore } from '../store/useResultsStore'

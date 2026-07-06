@@ -535,7 +535,14 @@
     "dropzone": "ファイルをここにドロップするか、クリックして選択",
     "uploaded": "ファイルアップロード済み",
     "notStarted": "未着手",
-    "confirmDelete": "この書類の保存済みファイルを削除しますか？"
+    "confirmDelete": "この書類の保存済みファイルを削除しますか？",
+    "submittedBy": "提出者",
+    "required": "必須",
+    "conditional": "条件付き",
+    "yes": "はい",
+    "no": "いいえ",
+    "condition": "条件",
+    "note": "備考"
   },
   "exportImport": {
     "title": "データ＆設定",

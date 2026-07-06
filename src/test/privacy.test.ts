@@ -78,8 +78,10 @@ function resetStores() {
 // ---------------------------------------------------------------------------
 
 describe('Privacy audit (11.3)', () => {
-  let fetchSpy: ReturnType<typeof vi.spyOn>
-  let xhrOpenSpy: ReturnType<typeof vi.spyOn>
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let fetchSpy: ReturnType<typeof vi.spyOn<any, any>>
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let xhrOpenSpy: ReturnType<typeof vi.spyOn<any, any>>
 
   beforeEach(() => {
     resetStores()
