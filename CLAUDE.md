@@ -13,7 +13,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Framer Motion** for spring-based animation
 - **Zustand** (modular stores, no Redux)
 - **IndexedDB** via `idb` for document blobs and progress state
-- **i18next** for internationalization
+- **Custom i18n** (`src/i18n/`) — `t()` / `useT()` hook backed by static locale JSON catalogs; no i18next
 - **Vitest** for unit/component tests
 - **Cloudflare Pages** for static hosting (build output: `dist/`)
 
@@ -54,7 +54,7 @@ DOMAIN (engine/ · content/)   INFRASTRUCTURE (persistence/ · i18n/)
 | `src/content/` | Loader + Zod schema validation for the `content/` knowledge base. Fails loudly on invalid content. |
 | `src/persistence/` | IndexedDB and localStorage adapters behind `StateRepository` / `BlobRepository` interfaces. The only place that knows about storage APIs. |
 | `src/store/` | Zustand stores (`useProfileStore`, `useQuestionnaireStore`, `useResultsStore`, `useDocumentsStore`, `useUiStore`). Orchestrate engine calls + persistence. Testable headless. |
-| `src/features/` | Screen-level composition (questionnaire, results, quest-map, documents, export-import). Reads stores + renders `ui/`. |
+| `src/features/` | Screen-level composition: `landing`, `track-select`, `questionnaire`, `decision` (results), `quest-map`, `documents`, `export-import`. Reads stores + renders `ui/`. |
 | `src/ui/` | Dumb presentational components. No store or domain imports. |
 | `src/app/` | Bootstrap, router, providers, layout shell, hydration gate. |
 | `content/` | The pluggable knowledge base: questions, decision tree, tracks, documents, locales. JSON + Markdown. |
@@ -65,16 +65,42 @@ Domain content lives in `content/` as JSON/Markdown, not in code:
 
 ```
 content/
-  questions/questions.json         # branching question bank
-  decision/decision-tree.json      # rules mapping answers → candidate tracks
-  tracks/track-<id>.json           # track metadata, milestones, document ids
-  documents/<doc-id>/meta.json     # document agency/category/obtain-method
-  documents/<doc-id>/guidance.en.md
-  locales/{en,ja}.json             # UI i18n strings
-  content.manifest.json            # version index
+  questions/questions.json              # branching question bank
+  decision/decision-tree.json           # rules mapping answers → candidate tracks
+  tracks/track-<id>.json                # track metadata, milestones, document ids
+  checklists/checklist-<id>.json        # per-track document checklists
+  documents/meta.json                   # top-level document registry
+  documents/<doc-id>/meta.json          # document agency/category/obtain-method
+  documents/<doc-id>/guidance.en.md     # per-locale guidance Markdown (lazy-loaded)
+  locales/{en,ja,zh-CN,zh-TW,ko}.json  # UI i18n strings (5 supported locales)
+  content.manifest.json                 # version index
 ```
 
+All content (except guidance Markdown) is loaded eagerly via Vite `import.meta.glob` and bundled at build time — zero runtime fetches. Guidance Markdown is lazy-loaded on demand with locale fallback to `en`.
+
 Questions use declarative `next[]` branches (JSON conditions, never `eval`). Adding a track or document = edit `content/`, no code change needed.
+
+## Routes
+
+| Path | Feature | Component |
+|---|---|---|
+| `/` | Landing | `LandingPage` |
+| `/track-select` | Track selection | `TrackSelectPage` |
+| `/questionnaire` | Q&A flow | `QuestionPage` |
+| `/results` | Track candidates | `ResultsPage` |
+| `/map` | Quest map / checklist | `QuestMapPage` |
+| `/settings` | Export / import | `ExportImportPage` |
+
+All routes are wrapped in `HydrationGate` (waits for IndexedDB load before render) and lazy-loaded with `React.lazy`.
+
+## i18n
+
+`src/i18n/index.ts` is a custom translation layer — **not i18next**.
+
+- `t(key, vars?, locale?)` — pure function, safe outside React. Falls back: requested locale → EN → raw key.
+- `useT()` — React hook that binds `t()` to `useUiStore` locale.
+- Key mapping: `q.<id>.label` → `questions.<id>.label`, `q.<id>.opt.<v>` → `questions.<id>.options.<v>`, `track.<id>.*` → `tracks.<id>.*`, `milestone.<id>` → `milestones.<id>`.
+- Supported locales: `en`, `ja`, `zh-CN`, `zh-TW`, `ko`. Add a new locale by adding the JSON file to `content/locales/` and one line to `CATALOGS` in `src/i18n/index.ts`.
 
 ## Design System (Liquid Glass)
 
@@ -96,6 +122,7 @@ Core rules:
   - `documents` store: blob metadata, key `docId`
   - `blobs` store: raw `Blob`, key `docId`
 - **localStorage**: only `locale`, `theme`, `lastRoute` (tiny, sync-read for fast first paint)
+- **Autosave**: every Zustand store subscribes via `store/persistence.ts`; any state change triggers a 500 ms debounced `IdbStateRepository.saveState()`. Boot hydration runs in `HydrationGate` before any route renders.
 - **Export format**: versioned JSON (`schemaVersion` + `contentVersion`), blobs intentionally excluded in prototype
 
 ## Testing Approach

@@ -496,6 +496,122 @@
     "application_form": {
       "title": "永住許可申請書",
       "category": "申請"
+    },
+    "annual_income_proof": {
+      "title": "年収証明書",
+      "category": "財務"
+    },
+    "assets_proof": {
+      "title": "資産証明書",
+      "category": "財務"
+    },
+    "birth_certificate": {
+      "title": "出生証明書",
+      "category": "家族"
+    },
+    "employee_health_pension_receipts": {
+      "title": "健康保険・厚生年金保険料領収証書",
+      "category": "保険"
+    },
+    "family_register": {
+      "title": "戸籍謄本",
+      "category": "家族"
+    },
+    "family_status_cert": {
+      "title": "身分関係証明書",
+      "category": "家族"
+    },
+    "guarantor_id_docs": {
+      "title": "身元保証に係る身分書類",
+      "category": "申請"
+    },
+    "guarantor_letter": {
+      "title": "身元保証書",
+      "category": "申請"
+    },
+    "health_insurance_card": {
+      "title": "健康保険被保険者証",
+      "category": "保険"
+    },
+    "hsp_notification": {
+      "title": "高度専門職ポイント計算結果通知書",
+      "category": "高度専門職"
+    },
+    "hsp_point_sheet": {
+      "title": "高度専門職ポイント計算表",
+      "category": "高度専門職"
+    },
+    "hsp_point_sheet_1yr_ago": {
+      "title": "高度専門職ポイント計算表（1年前）",
+      "category": "高度専門職"
+    },
+    "hsp_point_sheet_3yr_ago": {
+      "title": "高度専門職ポイント計算表（3年前）",
+      "category": "高度専門職"
+    },
+    "hsp_supporting_docs": {
+      "title": "ポイント計算疎明資料",
+      "category": "高度専門職"
+    },
+    "j_skip_certificate": {
+      "title": "特別高度人材証明書",
+      "category": "J-Skip"
+    },
+    "jskip_eligibility_proof": {
+      "title": "特別高度人材（J-Skip）適格性証明書",
+      "category": "J-Skip"
+    },
+    "jskip_qualification_docs": {
+      "title": "学歴・職歴証明書",
+      "category": "J-Skip"
+    },
+    "marriage_certificate": {
+      "title": "婚姻証明書",
+      "category": "家族"
+    },
+    "national_health_insurance_card": {
+      "title": "国民健康保険被保険者証",
+      "category": "保険"
+    },
+    "national_health_insurance_payment_cert": {
+      "title": "国民健康保険料（税）納付証明書",
+      "category": "保険"
+    },
+    "national_health_insurance_receipts": {
+      "title": "国民健康保険料（税）領収証書",
+      "category": "保険"
+    },
+    "national_tax_cert": {
+      "title": "国税の納税証明書（その3）",
+      "category": "税務"
+    },
+    "pension_record": {
+      "title": "被保険者記録照会回答票",
+      "category": "年金"
+    },
+    "reason_letter": {
+      "title": "理由書",
+      "category": "申請"
+    },
+    "relative_list": {
+      "title": "親族一覧表",
+      "category": "家族"
+    },
+    "residence_tax_payment_cert": {
+      "title": "住民税の納税証明書",
+      "category": "税務"
+    },
+    "residence_tax_timely_proof": {
+      "title": "住民税適正納付証明書",
+      "category": "税務"
+    },
+    "social_insurance_payment_cert": {
+      "title": "社会保険料納入証明書",
+      "category": "保険"
+    },
+    "understanding_letter": {
+      "title": "了解書",
+      "category": "申請"
     }
   },
   "questmap": {

@@ -4,6 +4,9 @@ import { SUPPORTED_LOCALES, type SupportedLocale } from '../i18n'
 const LOCALE_LABELS: Record<SupportedLocale, string> = {
   en: 'EN',
   ja: '日本語',
+  'zh-CN': '简体中文',
+  'zh-TW': '繁體中文',
+  ko: '한국어',
 }
 
 export function LocaleSwitcher() {

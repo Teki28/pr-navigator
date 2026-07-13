@@ -497,6 +497,122 @@
     "application_form": {
       "title": "Permanent Residence Application Form",
       "category": "Application"
+    },
+    "annual_income_proof": {
+      "title": "Proof of Annual Income",
+      "category": "Financial"
+    },
+    "assets_proof": {
+      "title": "Proof of Assets",
+      "category": "Financial"
+    },
+    "birth_certificate": {
+      "title": "Birth Certificate",
+      "category": "Family"
+    },
+    "employee_health_pension_receipts": {
+      "title": "Employee Health & Pension Premium Receipts",
+      "category": "Insurance"
+    },
+    "family_register": {
+      "title": "Family Register",
+      "category": "Family"
+    },
+    "family_status_cert": {
+      "title": "Proof of Family Status",
+      "category": "Family"
+    },
+    "guarantor_id_docs": {
+      "title": "Guarantor ID Documents",
+      "category": "Application"
+    },
+    "guarantor_letter": {
+      "title": "Guarantor Letter",
+      "category": "Application"
+    },
+    "health_insurance_card": {
+      "title": "Employee Health Insurance Card",
+      "category": "Insurance"
+    },
+    "hsp_notification": {
+      "title": "HSP Point Notification",
+      "category": "HSP"
+    },
+    "hsp_point_sheet": {
+      "title": "HSP Point Calculation Table",
+      "category": "HSP"
+    },
+    "hsp_point_sheet_1yr_ago": {
+      "title": "HSP Point Calculation Table (1 Year Ago)",
+      "category": "HSP"
+    },
+    "hsp_point_sheet_3yr_ago": {
+      "title": "HSP Point Calculation Table (3 Years Ago)",
+      "category": "HSP"
+    },
+    "hsp_supporting_docs": {
+      "title": "HSP Point Supporting Documents",
+      "category": "HSP"
+    },
+    "j_skip_certificate": {
+      "title": "J-Skip Certificate",
+      "category": "J-Skip"
+    },
+    "jskip_eligibility_proof": {
+      "title": "J-Skip Eligibility Proof",
+      "category": "J-Skip"
+    },
+    "jskip_qualification_docs": {
+      "title": "J-Skip Qualification Documents",
+      "category": "J-Skip"
+    },
+    "marriage_certificate": {
+      "title": "Marriage Certificate",
+      "category": "Family"
+    },
+    "national_health_insurance_card": {
+      "title": "National Health Insurance Card",
+      "category": "Insurance"
+    },
+    "national_health_insurance_payment_cert": {
+      "title": "National Health Insurance Payment Certificate",
+      "category": "Insurance"
+    },
+    "national_health_insurance_receipts": {
+      "title": "National Health Insurance Premium Receipts",
+      "category": "Insurance"
+    },
+    "national_tax_cert": {
+      "title": "National Tax Payment Certificate",
+      "category": "Tax"
+    },
+    "pension_record": {
+      "title": "Pension Record",
+      "category": "Pension"
+    },
+    "reason_letter": {
+      "title": "Reason Statement",
+      "category": "Application"
+    },
+    "relative_list": {
+      "title": "Family Members List",
+      "category": "Family"
+    },
+    "residence_tax_payment_cert": {
+      "title": "Resident Tax Payment Certificate",
+      "category": "Tax"
+    },
+    "residence_tax_timely_proof": {
+      "title": "Proof of Timely Resident Tax Payments",
+      "category": "Tax"
+    },
+    "social_insurance_payment_cert": {
+      "title": "Social Insurance Payment Certificate",
+      "category": "Insurance"
+    },
+    "understanding_letter": {
+      "title": "Acknowledgement Letter",
+      "category": "Application"
     }
   },
   "questmap": {

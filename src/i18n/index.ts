@@ -1,6 +1,9 @@
 import { useCallback } from 'react'
 import enJson from '../../content/locales/en.json'
 import jaJson from '../../content/locales/ja.json'
+import zhCNJson from '../../content/locales/zh-CN.json'
+import zhTWJson from '../../content/locales/zh-TW.json'
+import koJson from '../../content/locales/ko.json'
 import { useUiStore } from '../store/useUiStore'
 
 // ---------------------------------------------------------------------------
@@ -10,10 +13,13 @@ import { useUiStore } from '../store/useUiStore'
 const CATALOGS: Record<string, unknown> = {
   en: enJson,
   ja: jaJson,
+  'zh-CN': zhCNJson,
+  'zh-TW': zhTWJson,
+  ko: koJson,
 }
 
-export type SupportedLocale = 'en' | 'ja'
-export const SUPPORTED_LOCALES: SupportedLocale[] = ['en', 'ja']
+export type SupportedLocale = 'en' | 'ja' | 'zh-CN' | 'zh-TW' | 'ko'
+export const SUPPORTED_LOCALES: SupportedLocale[] = ['en', 'ja', 'zh-CN', 'zh-TW', 'ko']
 
 // ---------------------------------------------------------------------------
 // Internal helpers

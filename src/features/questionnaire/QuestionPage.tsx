@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useQuestionnaireStore } from '../../store/useQuestionnaireStore'
 import { useProfileStore } from '../../store/useProfileStore'
@@ -8,12 +8,15 @@ import { Button } from '../../ui/Button'
 import { QuestionRenderer } from './QuestionRenderer'
 import { useT } from '../../i18n'
 
+const AUTO_ADVANCE_TYPES = new Set(['single-choice', 'boolean'])
+
 export function QuestionPage() {
   const t = useT()
   const navigate = useNavigate()
   const { questions, currentId, path, isComplete, next, back } = useQuestionnaireStore()
   const { answers, setAnswer } = useProfileStore()
   const setLastRoute = useUiStore((s) => s.setLastRoute)
+  const autoAdvanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
     setLastRoute('/questionnaire')
@@ -22,6 +25,10 @@ export function QuestionPage() {
   useEffect(() => {
     if (isComplete) navigate('/results')
   }, [isComplete, navigate])
+
+  useEffect(() => () => {
+    if (autoAdvanceTimer.current) clearTimeout(autoAdvanceTimer.current)
+  }, [])
 
   const currentQuestion = questions.find((q) => q.id === currentId)
 
@@ -35,6 +42,18 @@ export function QuestionPage() {
 
   const questionNumber = path.length + 1
   const canGoBack = path.length > 0
+  const isAutoAdvance = AUTO_ADVANCE_TYPES.has(currentQuestion.type)
+
+  const handleChange = (v: unknown) => {
+    setAnswer(currentQuestion.id, v)
+    if (isAutoAdvance) {
+      if (autoAdvanceTimer.current) clearTimeout(autoAdvanceTimer.current)
+      autoAdvanceTimer.current = setTimeout(() => {
+        autoAdvanceTimer.current = null
+        next(useProfileStore.getState().answers)
+      }, 300)
+    }
+  }
 
   return (
     <div className="lg-bg min-h-screen flex flex-col items-center justify-center p-6 gap-6">
@@ -65,11 +84,11 @@ export function QuestionPage() {
         <QuestionRenderer
           question={currentQuestion}
           value={answers[currentQuestion.id]}
-          onChange={(v) => setAnswer(currentQuestion.id, v)}
+          onChange={handleChange}
         />
       </Glass>
 
-      {/* Navigation */}
+      {/* Navigation — Next is hidden for auto-advance types */}
       <div className="w-full max-w-lg flex gap-4 justify-between">
         <Button
           variant="secondary"
@@ -79,13 +98,15 @@ export function QuestionPage() {
         >
           ← {t('questionnaire.back')}
         </Button>
-        <Button
-          variant="primary"
-          onClick={() => next(answers)}
-          aria-label={t('questionnaire.next')}
-        >
-          {t('questionnaire.next')} →
-        </Button>
+        {!isAutoAdvance && (
+          <Button
+            variant="primary"
+            onClick={() => next(answers)}
+            aria-label={t('questionnaire.next')}
+          >
+            {t('questionnaire.next')} →
+          </Button>
+        )}
       </div>
     </div>
   )
